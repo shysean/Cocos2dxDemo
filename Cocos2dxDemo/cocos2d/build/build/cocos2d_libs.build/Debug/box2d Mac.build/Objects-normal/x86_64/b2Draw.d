@@ -1,0 +1,5 @@
+dependencies: \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/external/Box2D/Common/b2Draw.cpp \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../external/Box2D/Common/b2Draw.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../external/Box2D/Common/b2Math.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../external/Box2D/Common/b2Settings.h

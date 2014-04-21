@@ -1,0 +1,26 @@
+dependencies: \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/cocos/2d/CCShaderCache.cpp \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/CCShaderCache.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/../base/CCRef.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/base/CCPlatformMacros.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/ccConfig.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/../base/CCPlatformConfig.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/platform/mac/CCPlatformDefine.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/CCGLProgram.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/ccMacros.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/../base/CCConsole.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/platform/mac/CCStdC.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/platform/mac/CCGL.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/math/kazmath/kazmath/kazmath.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/math/kazmath/kazmath/vec2.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/math/kazmath/kazmath/utility.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/math/kazmath/kazmath/vec3.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/math/kazmath/kazmath/vec4.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/math/kazmath/kazmath/mat3.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/math/kazmath/kazmath/mat4.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/math/kazmath/kazmath/quaternion.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/math/kazmath/kazmath/plane.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/math/kazmath/kazmath/aabb.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/math/kazmath/kazmath/ray2.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/math/kazmath/kazmath/ray3.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/ccShaders.h

@@ -1,0 +1,20 @@
+dependencies: \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/cocos/deprecated/CCArray.cpp \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/cocos/deprecated/CCArray.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/ccCArray.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/ccMacros.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/../base/CCConsole.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/base/CCPlatformMacros.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/ccConfig.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/../base/CCPlatformConfig.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/platform/mac/CCPlatformDefine.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/platform/mac/CCStdC.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/../base/CCRef.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/../base/CCDataVisitor.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/deprecated/CCString.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/platform/CCFileUtils.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/ccTypes.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/../base/CCGeometry.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/platform/mac/CCGL.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/../base/CCValue.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/../base/CCData.h

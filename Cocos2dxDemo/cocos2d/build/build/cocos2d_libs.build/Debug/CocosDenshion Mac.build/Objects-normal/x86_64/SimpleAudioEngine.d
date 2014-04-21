@@ -1,0 +1,23 @@
+dependencies: \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/cocos/audio/mac/SimpleAudioEngine.mm \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/audio/include/SimpleAudioEngine.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/audio/include/Export.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/cocos/audio/mac/SimpleAudioEngine_objc.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/cocos/audio/mac/CDAudioManager.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/cocos/audio/mac/CocosDenshion.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/cocos/audio/mac/CDConfig.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/cocos/audio/mac/CDOpenALSupport.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/cocos/audio/mac/CDXMacOSXSupport.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/platform/CCFileUtils.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/base/CCPlatformMacros.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/ccConfig.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/base/CCPlatformConfig.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/platform/mac/CCPlatformDefine.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/ccTypes.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/base/CCGeometry.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/ccMacros.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/base/CCConsole.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/platform/mac/CCStdC.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/platform/mac/CCGL.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/base/CCValue.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/base/CCData.h

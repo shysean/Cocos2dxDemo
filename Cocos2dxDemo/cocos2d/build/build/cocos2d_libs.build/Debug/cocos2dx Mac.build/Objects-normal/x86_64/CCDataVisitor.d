@@ -1,0 +1,22 @@
+dependencies: \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/cocos/base/CCDataVisitor.cpp \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/base/CCRef.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/base/CCPlatformMacros.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/ccConfig.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/../base/CCPlatformConfig.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/platform/mac/CCPlatformDefine.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/deprecated/CCBool.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/../base/CCDataVisitor.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/deprecated/CCInteger.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/platform/CCCommon.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/deprecated/CCFloat.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/deprecated/CCDouble.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/deprecated/CCString.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/deprecated/CCArray.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/ccCArray.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/ccMacros.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/../base/CCConsole.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/platform/mac/CCStdC.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/deprecated/CCDictionary.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/2d/uthash.h \
+  /Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/build/../cocos/deprecated/CCSet.h
