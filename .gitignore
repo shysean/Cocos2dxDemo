@@ -1,3 +1,7 @@
 *.o
 *.d
 *.class
+*.apk
+*.jar
+*.dex
+*.ap_
