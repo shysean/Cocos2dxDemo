@@ -31,6 +31,16 @@
 			<arguments>
 			</arguments>
 		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.ui.externaltools.ExternalToolBuilder</name>
+			<triggers>full,incremental,</triggers>
+			<arguments>
+				<dictionary>
+					<key>LaunchConfigHandle</key>
+					<value>&lt;project&gt;/.externalToolBuilders/NDK Builder.launch</value>
+				</dictionary>
+			</arguments>
+		</buildCommand>
 	</buildSpec>
 	<natures>
 		<nature>com.android.ide.eclipse.adt.AndroidNature</nature>
@@ -44,17 +54,17 @@
 		<link>
 			<name>Classes</name>
 			<type>2</type>
-			<locationURI>COCOS2DX/projects/Cocos2dxDemo/Classes</locationURI>
+			<location>/Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/Classes</location>
 		</link>
 		<link>
 			<name>cocos2dx</name>
 			<type>2</type>
-			<locationURI>COCOS2DX/cocos2dx</locationURI>
+			<location>/Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d</location>
 		</link>
 		<link>
 			<name>extensions</name>
 			<type>2</type>
-			<locationURI>COCOS2DX/extensions</locationURI>
+			<location>/Users/sean/Dev/GitRepository/Cocos2DxDemo/Cocos2dxDemo/cocos2d/extensions</location>
 		</link>
 		<link>
 			<name>scripting</name>
