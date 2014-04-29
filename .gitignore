@@ -122,3 +122,6 @@ assets/
 .classpath
 .project
 .cproject
+
+MyCocosDemo/proj.ios_mac/MyCocosDemo.xcodeproj/xcuserdata/**
+MyCocosDemo/proj.ios_mac/MyCocosDemo.xcodeproj/project.xcworkspace/xcuserdata/**

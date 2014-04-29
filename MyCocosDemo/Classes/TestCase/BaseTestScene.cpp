@@ -44,16 +44,36 @@ void BaseTestScene::onEnter()
     
     auto menuItem = MenuItemLabel::create(label, testScene_callback );
     auto menu = Menu::create(menuItem, NULL);
-    
     menu->setPosition( Point::ZERO );
-    
+
     Size visibleSize = Director::getInstance()->getVisibleSize();
     Point visibleOrgPoint = Director::getInstance()->getVisibleOrigin();
     
-    menuItem->setPosition( Point( visibleSize.width + visibleOrgPoint.x - 50,
+    menuItem->setAnchorPoint(Point(1,0));
+    menuItem->setPosition( Point( visibleSize.width + visibleOrgPoint.x - 25,
                                  visibleOrgPoint.y + 25) );
-    
     addChild(menu, 1);
+    
+    // add TestMenu for different testcase
+    initTestMenu();
+    
+    auto testMenu = Menu::createWithArray(vectorOfMenu);
+    testMenu->alignItemsVertically();
+    
+    // sean: doesn't work. why?
+    // Because Layer and Scene m_bIgnoreAnchorPointForPosition = true;
+    // Menu's superclass is Layer
+//    testMenu->setAnchorPoint(Point(0,0));
+    testMenu->setPosition(Point::ZERO);
+    
+    for( auto child : testMenu->getChildren() )
+    {
+        child->setAnchorPoint(Point(1, 0));
+        int posY = child->getPositionY();
+        child->setPosition(Point(visibleSize.width - 25, posY + visibleSize.height / 2));
+    }
+    
+    addChild(testMenu);
 }
 
 
