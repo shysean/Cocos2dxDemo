@@ -5,3 +5,5 @@
 *.jar
 *.dex
 *.ap_
+*.app
+Cocos2dxDemo/cocos2d/**
