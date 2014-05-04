@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="HELLO">hello world!</string>
+    <string name="HELLO1">hello world1!</string>
+    <string name="HELLO2">hello world2!</string>
+    <string name="HELLO3">hello world3!</string>
+    <string name="HELLO4">hello world4!</string>
+    <string name="HELLO5">hello world5!</string>
+    <string name="HELLO6">hello world6!</string>
+    <string name="HELLO7">hello world7!</string>
+    <string name="HELLO8">hello world8!</string>
+    <string name="HELLO9">hello world9!</string>
+    <string name="HELLO10">hello world10!</string>
+    <string name="HELLO11">hello world11!</string>
+    <string name="HELLO12">hello world12!</string>
+</resources>

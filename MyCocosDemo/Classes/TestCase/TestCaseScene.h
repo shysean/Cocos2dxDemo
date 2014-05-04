@@ -9,7 +9,6 @@
 #ifndef __Cocos2dxDemo__TestCaseScene__
 #define __Cocos2dxDemo__TestCaseScene__
 
-#include "SocketTest/SocketTest.h"
 #include "cocos2d.h"
 
 USING_NS_CC;
@@ -18,6 +17,8 @@ USING_NS_CC;
 { varTitle, []() { return new varClassName(); } },
 
 #define LINE_SPACE          40
+
+class BaseTestScene;
 
 typedef struct _Controller{
 	const char *test_name;

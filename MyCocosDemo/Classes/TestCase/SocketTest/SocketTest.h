@@ -16,7 +16,7 @@ class SocketTest : public BaseTestScene
 public:
     SocketTest();
     
-    void runThisTest();
+    virtual void runThisTest();
     virtual void initTestMenu();
 
     
