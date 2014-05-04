@@ -7,7 +7,7 @@
 //
 
 #include "TextTest.h"
-#include "GameText.h"
+#include "../../Tools/GameText.h"
 
 using namespace std;
 
@@ -36,8 +36,12 @@ void TextTest::testGetText()
 {
     CCLOG("TextTest::testGetText called.");
 
-    string result = GameText::getInstance()->getText("HELLO");
-    
-    CCLOG("testGetText::result = %s", result.c_str());
+    // Has key "HELLO"
+    string result1 = GameText::getInstance()->getText("HELLO");
+    CCLOG("TextTest::testGetText result = %s", result1.c_str());
+
+    // No key "H"
+    string result2 = GameText::getInstance()->getText("H");
+    CCLOG("TextTest::testGetText result = %s", result2.c_str());
     
 }

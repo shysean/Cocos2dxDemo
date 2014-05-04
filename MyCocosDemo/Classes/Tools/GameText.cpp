@@ -50,15 +50,30 @@ void GameText::init()
     }
     
 //    Code For Test:
-//    string fullPath = FileUtils::getInstance()->fullPathForFilename(stringFile);
-//    CCLOG("GameText::init fullPath = %s", fullPath.c_str());
+    string fullPath = FileUtils::getInstance()->fullPathForFilename(STRING_XML_FILE);
+    CCLOG("GameText::init fullPath = %s", fullPath.c_str());
     
     
-    XMLDocument *myDocument = new XMLDocument();
-    myDocument->LoadFile(STRING_XML_FILE.c_str());
+    XMLDocument *document = new XMLDocument();
     
-    XMLElement *rootElement = myDocument->RootElement();
-//    CCLOG("RootElement:%s",rootElement->Value());
+    // TinyXml2's BUG: call LoadFile() will crashed on Android.
+    // return errorCode is XML_ERROR_FILE_NOT_FOUND(3)
+    // XMLError error = myDocument->LoadFile(fullPath.c_str());
+    
+    ssize_t size;
+    char *pFileContent = (char*)FileUtils::getInstance()->getFileData(STRING_XML_FILE , "r", &size);
+    
+    // Parse() is OK!
+    XMLError error =document->Parse(pFileContent);
+    
+    if(error != XML_SUCCESS)
+    {
+        CCLOGERROR("GameText::init LoadFile Failed! Error Code = %d", error);
+        return;
+    }
+    
+    XMLElement *rootElement = document->RootElement();
+    CCLOG("RootElement:%s",rootElement->Value());
     
     // 遍历rootElement下的所有子标签
     for( auto todoElement = rootElement->FirstChildElement();
@@ -67,7 +82,7 @@ void GameText::init()
     {
         
         string attribute = todoElement->Attribute("name");
-//        CCLOG("attribute:%s",attribute.c_str());
+        CCLOG("attribute:%s",attribute.c_str());
         string value = todoElement->GetText();
         
         stringMap.insert(std::make_pair(attribute, value));
@@ -77,5 +92,18 @@ void GameText::init()
 
 string GameText::getText(string key)
 {
-    return stringMap.at(key);
+    string result;
+    try {
+        result = stringMap.at(key);
+    } catch (exception e) {
+        CCLOGWARN("GameText::getText throw exception");
+        
+#if defined COCOS2D_DEBUG
+        result = "NO STRING RES!";
+#else
+        result = "";
+#endif
+        
+    }
+    return result;
 }
