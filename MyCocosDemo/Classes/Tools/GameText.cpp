@@ -11,12 +11,13 @@
 
 using namespace tinyxml2;
 
-// text folder need add as references
+// text folder need add as references in Xcode
 // Don't add as group, if not cocos will can't find the file.
 const string STRING_XML_FILE = "text/string.xml";
 
 
-GameText* GameText::instance = nullptr;
+GameText* GameText::m_instance = nullptr;
+bool GameText::m_isReady = false;
 
 GameText::GameText()
 {
@@ -24,34 +25,34 @@ GameText::GameText()
 
 GameText::~GameText()
 {
-    stringMap.clear();
+    m_stringMap.clear();
 }
 
 GameText* GameText::getInstance()
 {
-    if (nullptr == instance)
+    if (nullptr == m_instance)
     {
-        instance = new GameText();
-        instance->init();
+        m_instance = new GameText();
+        m_isReady = m_instance->init();
     }
     
-    return instance;
+    return m_instance;
 }
 
-void GameText::init()
+bool GameText::init()
 {
-    stringMap.clear();
+    m_stringMap.clear();
     
     bool isFileExist = FileUtils::getInstance()->isFileExist(STRING_XML_FILE);
     if (isFileExist == false)
     {
-        CCLOGERROR("GameText::init %s is not exist!", STRING_XML_FILE.c_str());
-        return;
+        CCLOGERROR("GameText.init: %s is not exist!", STRING_XML_FILE.c_str());
+        return false;
     }
     
-//    Code For Test:
-    string fullPath = FileUtils::getInstance()->fullPathForFilename(STRING_XML_FILE);
-    CCLOG("GameText::init fullPath = %s", fullPath.c_str());
+//    Code For Debug:
+//    string fullPath = FileUtils::getInstance()->fullPathForFilename(STRING_XML_FILE);
+//    CCLOG("GameText::init fullPath = %s", fullPath.c_str());
     
     
     XMLDocument *document = new XMLDocument();
@@ -64,16 +65,16 @@ void GameText::init()
     char *pFileContent = (char*)FileUtils::getInstance()->getFileData(STRING_XML_FILE , "r", &size);
     
     // Parse() is OK!
-    XMLError error =document->Parse(pFileContent);
+    XMLError error = document->Parse(pFileContent);
     
     if(error != XML_SUCCESS)
     {
-        CCLOGERROR("GameText::init LoadFile Failed! Error Code = %d", error);
-        return;
+        CCLOGERROR("GameText.init: LoadFile Failed! Error Code = %d", error);
+        return false;
     }
     
     XMLElement *rootElement = document->RootElement();
-    CCLOG("RootElement:%s",rootElement->Value());
+//    CCLOG("RootElement:%s",rootElement->Value());
     
     // 遍历rootElement下的所有子标签
     for( auto todoElement = rootElement->FirstChildElement();
@@ -82,21 +83,36 @@ void GameText::init()
     {
         
         string attribute = todoElement->Attribute("name");
-        CCLOG("attribute:%s",attribute.c_str());
         string value = todoElement->GetText();
-        
-        stringMap.insert(std::make_pair(attribute, value));
+
+//      CCLOG("attribute:%s",attribute.c_str());
+//      CCLOG("value:%s",value.c_str());
+
+        m_stringMap.insert(std::make_pair(attribute, value));
     }
+    
+    return true;
 }
 
 
 string GameText::getText(string key)
 {
     string result;
+
+    if (m_isReady == false) {
+        CCLOGWARN("GameText.getText: GameText is not ready.");
+#if defined COCOS2D_DEBUG
+        result = "NO STRING RES!";
+#else
+        result = "";
+#endif    
+        return result;
+    }
+    
     try {
-        result = stringMap.at(key);
+        result = m_stringMap.at(key);
     } catch (exception e) {
-        CCLOGWARN("GameText::getText throw exception");
+        CCLOGWARN("GameText.getText: Throw exception");
         
 #if defined COCOS2D_DEBUG
         result = "NO STRING RES!";

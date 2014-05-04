@@ -8,5 +8,6 @@
 - 纹理绘图资源
 - 资源管理
 - sqliteDemo
-- 字符串国际化Demo
+- 字符串国际化Demo（XML读取）
+- 音乐生效Demo
 ...

@@ -23,7 +23,7 @@ private:
     GameText();
     ~GameText();
     
-    void init();
+    bool init();
     
 public:
     static GameText* getInstance();
@@ -32,8 +32,12 @@ public:
 
     
 private:
-    static GameText* instance;
-    StringMap stringMap;
+    
+    static GameText* m_instance;
+    
+    static bool m_isReady;
+    StringMap m_stringMap;
+
 
 };
 
