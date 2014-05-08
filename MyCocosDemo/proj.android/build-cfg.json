@@ -1,13 +1,17 @@
 {
-    "ndk_module_path" :[
-        "../cocos2d",
-        "../cocos2d/cocos",
-        "../cocos2d/external"
-    ],
+    "alias": "123456", 
+    "alias_pass": "123456", 
     "copy_resources": [
         {
-            "from": "../Resources",
+            "from": "../Resources", 
             "to": ""
         }
+    ], 
+    "key_store": "/Users/sean/Dev/workspace/E2Android_4_5/keystore/eo2.keystore", 
+    "key_store_pass": "123456", 
+    "ndk_module_path": [
+        "../cocos2d", 
+        "../cocos2d/cocos", 
+        "../cocos2d/external"
     ]
 }

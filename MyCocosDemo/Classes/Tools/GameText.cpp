@@ -57,8 +57,8 @@ bool GameText::init()
     
     XMLDocument *document = new XMLDocument();
     
-    // TinyXml2's BUG: call LoadFile() will crashed on Android.
-    // return errorCode is XML_ERROR_FILE_NOT_FOUND(3)
+    // TinyXml2's BUG: call LoadFile() will crash on Android.
+    // return errorCode is XML_ERROR_FILE_NOT_FOUND(=3)
     // XMLError error = myDocument->LoadFile(fullPath.c_str());
     
     ssize_t size;

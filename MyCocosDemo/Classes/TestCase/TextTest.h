@@ -10,7 +10,7 @@
 #define __MyCocosDemo__TextTest__
 
 #include "cocos2d.h"
-#include "../BaseTestScene.h"
+#include "BaseTestScene.h"
 
 class TextTest : public BaseTestScene
 {
@@ -21,8 +21,12 @@ public:
     virtual void runThisTest();
     virtual void initTestMenu();
     
+    virtual bool init() override;
     
     void testGetText();
+    
+private:
+    Label* infoLabel;
 };
 
 #endif /* defined(__MyCocosDemo__TextTest__) */

@@ -7,28 +7,24 @@
 //
 
 #include "BaseTestScene.h"
-#include "TestCaseScene.h"
+#include "../TestCaseScene.h"
 #include "ui/UIScrollView.h"
 
 BaseTestScene::BaseTestScene()
 {
-    CCLOG("BaseTestScene Constructor.");
+//    CCLOG("BaseTestScene Constructor.");
     Scene::init();
 
 }
 
 BaseTestScene::~BaseTestScene()
 {
-    CCLOG("BaseTestScene Destructor.");
+//    CCLOG("BaseTestScene Destructor.");
 }
 
 void testScene_callback(Ref *sender )
 {
-    auto scene = Scene::create();
-    
-    auto layer = new TestCaseScene();
-    scene->addChild(layer);
-    layer->release();
+    auto scene = new TestCaseScene();
     
     Director::getInstance()->replaceScene(scene);
     
@@ -36,11 +32,11 @@ void testScene_callback(Ref *sender )
 
 void BaseTestScene::onEnter()
 {
-    CCLOG("BaseTestScene onEnter.");
+//    CCLOG("BaseTestScene onEnter.");
     Scene::onEnter();
     
     //add the menu item for back to main menu
-    auto label = Label::createWithSystemFont("<< Back", "Arial", 20);
+    auto label = Label::createWithSystemFont("<< Back", "Arial", 50);
     
     auto menuItem = MenuItemLabel::create(label, testScene_callback );
     auto menu = Menu::create(menuItem, NULL);

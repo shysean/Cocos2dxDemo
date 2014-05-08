@@ -7,8 +7,8 @@
 //
 
 #include "TestCaseScene.h"
-#include "SocketTest/SocketTest.h"
-#include "StringManager/TextTest.h"
+#include "TestCase/SocketTest.h"
+#include "TestCase/TextTest.h"
 
 
 Controller g_aTestNames[] = {
@@ -25,9 +25,47 @@ TestCaseScene::TestCaseScene()
 {
     CCLOG("TestCaseScene");
     
+    init();
+}
+
+TestCaseScene::~TestCaseScene()
+{
+    CCLOG("~TestCaseScene");
+}
+
+bool TestCaseScene::init()
+{
+    
+    GLView *glview = Director::getInstance()->getOpenGLView();
+    glview->setDesignResolutionSize(1280, 800, ResolutionPolicy::SHOW_ALL);
+    
+    Size visibleSize = Director::getInstance()->getVisibleSize();
+    Point visibleOrigin = Director::getInstance()->getVisibleOrigin();
+
+    Size frameSize = glview->getFrameSize();
+    Size winSize = Director::getInstance()->getWinSize();
+
+    
+    Label* infoLabel = Label::create();
+    infoLabel->setContentSize(Size(visibleSize.width, 30));
+    infoLabel->setPosition(Point(visibleOrigin.x, visibleOrigin.y + visibleSize.height));
+    infoLabel->setAnchorPoint(Point::ANCHOR_TOP_LEFT);
+    infoLabel->setSystemFontName("Arial");
+    infoLabel->setSystemFontSize(24);
+    infoLabel->setTextColor(Color4B::ORANGE);
+    
+    char info[200];
+    sprintf(info, "Frame:%dx%d  Visible:%dx%d  Design:%dx%d",
+            (int)frameSize.width, (int)frameSize.height,
+            (int)visibleSize.width, (int)visibleSize.height,
+            (int)winSize.width, (int)winSize.height);
+    infoLabel->setString(info);
+    
+    addChild(infoLabel);
+    
+    
     m_menu = createMenu();
     addChild(m_menu);
-    
     
     // Register Touch Event
     auto listener = EventListenerTouchOneByOne::create();
@@ -37,12 +75,8 @@ TestCaseScene::TestCaseScene()
     listener->onTouchMoved = CC_CALLBACK_2(TestCaseScene::onTouchMoved, this);
     
     _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
-
-}
-
-TestCaseScene::~TestCaseScene()
-{
-    CCLOG("~TestCaseScene");
+    
+    return true;
 }
 
 
@@ -51,19 +85,21 @@ Menu* TestCaseScene::createMenu()
     auto menu = Menu::create();
     
     Size visibleSize = Director::getInstance()->getVisibleSize();
+//    Point visibleOrigin = Director::getInstance()->getVisibleOrigin();
+    
     // add menu items for tests
     for (int i = 0; i < g_testCount; ++i)
     {
         
         // sean: For SystemFont
         // @see http://zh.wikipedia.org/zh-cn/Mac_OS_X%E5%AD%97%E4%BD%93%E5%88%97%E8%A1%A8
-        auto label = Label::createWithSystemFont(g_aTestNames[i].test_name, "Arial", 24);
+        auto label = Label::createWithSystemFont(g_aTestNames[i].test_name, "Arial", 48);
         label->setColor(Color3B::GREEN);
         
         auto menuItem = MenuItemLabel::create(label, CC_CALLBACK_1(TestCaseScene::menuCallback, this));
-        menuItem->setAnchorPoint(Point(1, 0));
+        menuItem->setAnchorPoint(Point(0, 0));
         menu->addChild(menuItem, i + 10000);
-        menuItem->setPosition( Point( visibleSize.width - 20,  (visibleSize.height - (i + 1) * LINE_SPACE) ));
+        menuItem->setPosition( Point( 100,  ( visibleSize.height - (i + 2) * LINE_SPACE)  ));
         
     }
     

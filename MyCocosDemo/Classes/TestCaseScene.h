@@ -16,7 +16,7 @@ USING_NS_CC;
 #define CREATE_TEST_SCENE(varTitle, varClassName)    \
 { varTitle, []() { return new varClassName(); } },
 
-#define LINE_SPACE          40
+#define LINE_SPACE          60
 
 class BaseTestScene;
 
@@ -30,6 +30,8 @@ class TestCaseScene : public Scene
 public:
     TestCaseScene();
     virtual ~TestCaseScene();
+    
+    virtual bool init();
     
     bool onTouchBegan(Touch* touches, Event  *event);
     void onTouchMoved(Touch* touches, Event  *event);

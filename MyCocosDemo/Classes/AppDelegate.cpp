@@ -1,6 +1,6 @@
 #include "AppDelegate.h"
 //#include "HelloWorldScene.h"
-#include "TestCase/TestCaseScene.h"
+#include "TestCaseScene.h"
 
 USING_NS_CC;
 
@@ -17,7 +17,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();
     if(!glview) {
-        glview = GLView::create("My Game");
+        glview = GLView::create("CocosDemo");
         director->setOpenGLView(glview);
     }
     

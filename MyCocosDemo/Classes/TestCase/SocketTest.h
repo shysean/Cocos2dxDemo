@@ -9,7 +9,7 @@
 #ifndef __Cocos2dxDemo__SocketTest__
 #define __Cocos2dxDemo__SocketTest__
 
-#include "../BaseTestScene.h"
+#include "BaseTestScene.h"
 
 class SocketTest : public BaseTestScene
 {
