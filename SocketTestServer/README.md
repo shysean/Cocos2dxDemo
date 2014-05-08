@@ -9,12 +9,12 @@ ruby echo-server.ruby
 telnet localhost 1234
 输入命令：
 
-#1 重复echo repeat (your-string) (repeat-count) 
+1 重复echo repeat (your-string) (repeat-count) 
 repeat a 1000
 
-#2 下发段数据 multi (total size) (block size)
+2 下发段数据 multi (total size) (block size)
 multi 10240 1000
 
-#2 下发int / short number (type) (value)
+3 下发int / short number (type) (value)
 number int 123400
 number short 1234
