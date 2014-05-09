@@ -15,6 +15,10 @@
 		14AACFA4191A50A6001DE502 /* TextTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14AACFA2191A50A6001DE502 /* TextTest.cpp */; };
 		14AACFA5191A50A6001DE502 /* TextTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14AACFA2191A50A6001DE502 /* TextTest.cpp */; };
 		14AACFA6191A565D001DE502 /* TestCaseScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14AACF96191A5057001DE502 /* TestCaseScene.cpp */; };
+		14AEA952191D1FDC00EE332E /* ScreenTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14AEA950191D1FDC00EE332E /* ScreenTest.cpp */; };
+		14AEA953191D1FDC00EE332E /* ScreenTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14AEA950191D1FDC00EE332E /* ScreenTest.cpp */; };
+		14AEA95A191D226800EE332E /* SocketTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14AEA958191D226800EE332E /* SocketTest.cpp */; };
+		14AEA95B191D226800EE332E /* SocketTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14AEA958191D226800EE332E /* SocketTest.cpp */; };
 		14F87266190FE67A0001C020 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14F8725A190FE67A0001C020 /* AppDelegate.cpp */; };
 		14F87267190FE67A0001C020 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14F8725A190FE67A0001C020 /* AppDelegate.cpp */; };
 		14F87268190FE67A0001C020 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14F8725C190FE67A0001C020 /* HelloWorldScene.cpp */; };
@@ -232,6 +236,10 @@
 		14AACF97191A5057001DE502 /* TestCaseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCaseScene.h; sourceTree = "<group>"; };
 		14AACFA2191A50A6001DE502 /* TextTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextTest.cpp; sourceTree = "<group>"; };
 		14AACFA3191A50A6001DE502 /* TextTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextTest.h; sourceTree = "<group>"; };
+		14AEA950191D1FDC00EE332E /* ScreenTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScreenTest.cpp; sourceTree = "<group>"; };
+		14AEA951191D1FDC00EE332E /* ScreenTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenTest.h; sourceTree = "<group>"; };
+		14AEA958191D226800EE332E /* SocketTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SocketTest.cpp; sourceTree = "<group>"; };
+		14AEA959191D226800EE332E /* SocketTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketTest.h; sourceTree = "<group>"; };
 		14F8725A190FE67A0001C020 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
 		14F8725B190FE67A0001C020 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		14F8725C190FE67A0001C020 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloWorldScene.cpp; sourceTree = "<group>"; };
@@ -370,6 +378,24 @@
 			name = TextTest;
 			sourceTree = "<group>";
 		};
+		14AEA956191D20EF00EE332E /* ScreenTest */ = {
+			isa = PBXGroup;
+			children = (
+				14AEA950191D1FDC00EE332E /* ScreenTest.cpp */,
+				14AEA951191D1FDC00EE332E /* ScreenTest.h */,
+			);
+			name = ScreenTest;
+			sourceTree = "<group>";
+		};
+		14AEA957191D225C00EE332E /* SocketTest */ = {
+			isa = PBXGroup;
+			children = (
+				14AEA958191D226800EE332E /* SocketTest.cpp */,
+				14AEA959191D226800EE332E /* SocketTest.h */,
+			);
+			name = SocketTest;
+			sourceTree = "<group>";
+		};
 		14F87259190FE67A0001C020 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -389,6 +415,8 @@
 		14F8725E190FE67A0001C020 /* TestCase */ = {
 			isa = PBXGroup;
 			children = (
+				14AEA957191D225C00EE332E /* SocketTest */,
+				14AEA956191D20EF00EE332E /* ScreenTest */,
 				14AACFA1191A5097001DE502 /* TextTest */,
 				14F8725F190FE67A0001C020 /* BaseTestScene.cpp */,
 				14F87260190FE67A0001C020 /* BaseTestScene.h */,
@@ -723,12 +751,14 @@
 			files = (
 				14F87266190FE67A0001C020 /* AppDelegate.cpp in Sources */,
 				14F8726A190FE67A0001C020 /* BaseTestScene.cpp in Sources */,
+				14AEA952191D1FDC00EE332E /* ScreenTest.cpp in Sources */,
 				14F87268190FE67A0001C020 /* HelloWorldScene.cpp in Sources */,
 				14772C8F1916A3D000A3F416 /* GameText.cpp in Sources */,
 				14AACF98191A5057001DE502 /* TestCaseScene.cpp in Sources */,
 				14AACFA4191A50A6001DE502 /* TextTest.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
+				14AEA95A191D226800EE332E /* SocketTest.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -739,6 +769,8 @@
 			files = (
 				14F87267190FE67A0001C020 /* AppDelegate.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
+				14AEA953191D1FDC00EE332E /* ScreenTest.cpp in Sources */,
+				14AEA95B191D226800EE332E /* SocketTest.cpp in Sources */,
 				14772C901916A3D000A3F416 /* GameText.cpp in Sources */,
 				14AACFA6191A565D001DE502 /* TestCaseScene.cpp in Sources */,
 				14AACFA5191A50A6001DE502 /* TextTest.cpp in Sources */,

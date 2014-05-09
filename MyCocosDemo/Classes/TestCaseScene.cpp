@@ -9,11 +9,14 @@
 #include "TestCaseScene.h"
 #include "TestCase/SocketTest.h"
 #include "TestCase/TextTest.h"
+#include "TestCase/ScreenTest.h"
 
 
 Controller g_aTestNames[] = {
     CREATE_TEST_SCENE("SocketTest", SocketTest)
     CREATE_TEST_SCENE("TextTest", TextTest)
+    CREATE_TEST_SCENE("ScreenTest", ScreenTest)
+
 };
 
 static int g_testCount = sizeof(g_aTestNames) / sizeof(g_aTestNames[0]);
