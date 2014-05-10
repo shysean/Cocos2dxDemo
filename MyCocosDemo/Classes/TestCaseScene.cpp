@@ -10,12 +10,14 @@
 #include "TestCase/SocketTest.h"
 #include "TestCase/TextTest.h"
 #include "TestCase/ScreenTest.h"
+#include "TestCase/GUITest.h"
 
 
 Controller g_aTestNames[] = {
     CREATE_TEST_SCENE("SocketTest", SocketTest)
     CREATE_TEST_SCENE("TextTest", TextTest)
     CREATE_TEST_SCENE("ScreenTest", ScreenTest)
+    CREATE_TEST_SCENE("GUITest", GUITest)
 
 };
 
@@ -40,12 +42,13 @@ bool TestCaseScene::init()
 {
     
     GLView *glview = Director::getInstance()->getOpenGLView();
-    glview->setDesignResolutionSize(1280, 800, ResolutionPolicy::SHOW_ALL);
+    Size frameSize = glview->getFrameSize();
+    glview->setDesignResolutionSize(frameSize.width, frameSize.height, ResolutionPolicy::SHOW_ALL);
     
     Size visibleSize = Director::getInstance()->getVisibleSize();
     Point visibleOrigin = Director::getInstance()->getVisibleOrigin();
 
-    Size frameSize = glview->getFrameSize();
+
     Size winSize = Director::getInstance()->getWinSize();
 
     

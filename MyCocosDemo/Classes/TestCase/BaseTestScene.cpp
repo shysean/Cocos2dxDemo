@@ -57,7 +57,7 @@ void BaseTestScene::onEnter()
     testMenu->alignItemsVertically();
     
     // sean: doesn't work. why?
-    // Because Layer and Scene m_bIgnoreAnchorPointForPosition = true;
+    // Layer and Scene m_bIgnoreAnchorPointForPosition = true;
     // Menu's superclass is Layer
 //    testMenu->setAnchorPoint(Point(0,0));
     testMenu->setPosition(Point::ZERO);
@@ -70,6 +70,16 @@ void BaseTestScene::onEnter()
     }
     
     addChild(testMenu);
+    
+    infoLabel = Label::create();
+    infoLabel->setContentSize(Size(visibleSize.width, 30));
+    infoLabel->setPosition(Point(visibleOrgPoint.x, visibleOrgPoint.y + visibleSize.height));
+    infoLabel->setAnchorPoint(Point::ANCHOR_TOP_LEFT);
+    infoLabel->setSystemFontName("Arial");
+    infoLabel->setSystemFontSize(24);
+    infoLabel->setTextColor(Color4B::ORANGE);
+    infoLabel->setString("DEBUG INFO...");
+    addChild(infoLabel);
 }
 
 

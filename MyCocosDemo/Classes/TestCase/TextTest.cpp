@@ -24,16 +24,6 @@ TextTest::~TextTest()
 bool TextTest::init()
 {
     Scene::init();
-
-    infoLabel = Label::create();
-    infoLabel->setPosition(Point(50, 400));
-    infoLabel->setString("Infomation Label");
-    infoLabel->setSystemFontSize(30);
-    infoLabel->setTextColor(Color4B::ORANGE);
-    infoLabel->setAnchorPoint(Point(0,1));
-    
-    addChild(infoLabel);
-    
     return true;
 }
 

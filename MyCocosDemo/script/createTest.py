@@ -11,7 +11,6 @@ out_path = '../Classes/TestCase/'
 # get param
 if len(sys.argv) < 2:
     print "Please input class name."
-    print sys.argv[0]
     sys.exit(0)
 
 className = sys.argv[1]
@@ -24,7 +23,7 @@ headerTemplateFile = file(header_template_file,'r')
 headerFile = out_path + className + '.h'
 
 if os.path.exists(headerFile):
-    print headerFile + ' has exists!'
+    print headerFile + ' has already exists!'
 else:
     headerOutData = file(headerFile, 'w')
 
@@ -43,7 +42,7 @@ sourceTemplateFile = file(source_template_file,'r')
 sourceFile = out_path + className + '.cpp'
 
 if os.path.exists(sourceFile):
-    print sourceFile + ' has exists!'
+    print sourceFile + ' has already exists!'
 else:
     sourceOutData = file(sourceFile, 'w')
 

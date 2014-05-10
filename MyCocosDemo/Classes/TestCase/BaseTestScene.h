@@ -34,6 +34,7 @@ public:
 protected:
     Vector<cocos2d::MenuItem *> vectorOfMenu;
 
+    Label* infoLabel;
 };
 
 #endif /* defined(__Cocos2dxDemo__BaseTestScene__) */

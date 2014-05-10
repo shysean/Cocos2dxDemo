@@ -23,6 +23,10 @@ void #CLASSNAME#::initTestMenu()
 //    ADD_TEST_METHOD(vectorOfMenu, testFunction);
 }
 
+
+// =============================
+//        Test Funtion
+// =============================
 void #CLASSNAME#::testFunction()
 {
 //    infoLabel->setString("testFunction");

@@ -102,7 +102,7 @@ string GameText::getText(string key)
     if (m_isReady == false) {
         CCLOGWARN("GameText.getText: GameText is not ready.");
 #if defined COCOS2D_DEBUG
-        result = "NO STRING RES!";
+        result = "NO READY!";
 #else
         result = "";
 #endif    

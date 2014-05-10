@@ -24,9 +24,7 @@ public:
     virtual bool init() override;
     
     void testGetText();
-    
-private:
-    Label* infoLabel;
+
 };
 
 #endif /* defined(__MyCocosDemo__TextTest__) */
