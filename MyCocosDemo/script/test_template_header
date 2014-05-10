@@ -1,0 +1,26 @@
+//
+//  #CLASSNAME#.h
+//  MyCocosDemo
+//
+//  Created by shihongyang on #TIME#
+//
+//
+
+#ifndef __MyCocosDemo__#CLASSNAME#__
+#define __MyCocosDemo__#CLASSNAME#__
+
+#include "BaseTestScene.h"
+
+class #CLASSNAME# : public BaseTestScene
+{
+public:
+    #CLASSNAME#();
+    
+    virtual void runThisTest();
+    virtual void initTestMenu();
+
+    void testFunction();
+
+};
+
+#endif /* defined(__MyCocosDemo__#CLASSNAME#__) */

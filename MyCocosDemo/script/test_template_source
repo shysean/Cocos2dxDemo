@@ -1,0 +1,29 @@
+//
+//  #CLASSNAME#.cpp
+//  MyCocosDemo
+//
+//  Created by shihongyang on #TIME#.
+//
+//
+
+#include "#CLASSNAME#.h"
+
+#CLASSNAME#::#CLASSNAME#()
+{
+    
+}
+
+void #CLASSNAME#::runThisTest()
+{
+    Director::getInstance()->replaceScene(this);
+}
+
+void #CLASSNAME#::initTestMenu()
+{
+//    ADD_TEST_METHOD(vectorOfMenu, testFunction);
+}
+
+void #CLASSNAME#::testFunction()
+{
+//    infoLabel->setString("testFunction");
+}
