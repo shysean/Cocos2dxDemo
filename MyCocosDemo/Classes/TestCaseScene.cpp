@@ -11,6 +11,7 @@
 #include "TestCase/TextTest.h"
 #include "TestCase/ScreenTest.h"
 #include "TestCase/GUITest.h"
+#include "TestCase/ParticleTest.h"
 
 
 Controller g_aTestNames[] = {
@@ -18,6 +19,7 @@ Controller g_aTestNames[] = {
     CREATE_TEST_SCENE("TextTest", TextTest)
     CREATE_TEST_SCENE("ScreenTest", ScreenTest)
     CREATE_TEST_SCENE("GUITest", GUITest)
+    CREATE_TEST_SCENE("ParticleTest", ParticleTest)
 
 };
 

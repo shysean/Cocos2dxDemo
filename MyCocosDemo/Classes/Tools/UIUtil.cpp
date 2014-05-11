@@ -50,6 +50,10 @@ Point VisibleUtil::rightTop()
     
     return Point(originPoint.x + visibleSize.width, originPoint.y + visibleSize.height);
 }
+Point VisibleUtil::center()
+{
+    return Point(width() / 2, height() / 2);
+}
 int VisibleUtil::top()
 {
     Point originPoint = leftBottom();

@@ -33,6 +33,7 @@ public:
     static Point leftTop();
     static Point rightBottom();
     static Point rightTop();
+    static Point center();
     static int top();
     static int down();
     static int left();
