@@ -7,40 +7,39 @@
 //
 
 #include "GUITest.h"
-#include "extensions/cocos-ext.h"
 #include "../Tools/UIUtil.h"
 
 USING_NS_CC_EXT;
 
 
 GUITest::GUITest()
+: m_edit(NULL)
 {
-    
+
 }
 
 void GUITest::runThisTest()
 {
     Director::getInstance()->replaceScene(this);
+    
+    m_uiLayer = Layer::create();
+    m_uiLayer->setPosition(Point::ZERO);
+    addChild(m_uiLayer);
 }
 
 void GUITest::initTestMenu()
 {
-    ADD_TEST_METHOD(vectorOfMenu, testFunction);
+//    ADD_TEST_METHOD(vectorOfMenu, showUILayer);
+    ADD_TEST_METHOD(addEditBox);
 }
 
-void GUITest::testFunction()
+void GUITest::showUILayer()
 {
-    infoLabel->setString("testFunction");
-    
-//    auto uiLayer = Layer::create();
-//    uiLayer->setPosition(Point::ZERO);
-    
-    auto edit1 = UIUtil::createEditBox(this, 100, 100, "info1");
-    auto edit2 = UIUtil::createEditBox(this, 100, 160, "info2");
-    auto edit3 = UIUtil::createEditBox(this, 100, 220, "info3");
-    auto edit4 = UIUtil::createEditBox(this, 100, 280, "info4");
+}
 
-//    addChild(_editName);
-    
-    
+void GUITest::addEditBox()
+{
+    if (m_edit == NULL) {
+        m_edit = UIUtil::createEditBox(m_uiLayer, 100, 100, "Input Name");
+    }
 }

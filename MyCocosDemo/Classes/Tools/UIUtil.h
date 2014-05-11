@@ -21,11 +21,23 @@ public:
     // widget
     static EditBox* createEditBox(Node* parent, int x, int y, const char* placeHolder = "");
     
-    // point
-    static Point visibleLeftBottom();
-    static Point visibleLeftTop();
-    static Point visibleRightBottom();
-    static Point visibleRightTop();
+
+    
 };
 
+class VisibleUtil
+{
+public:
+    // point
+    static Point leftBottom();
+    static Point leftTop();
+    static Point rightBottom();
+    static Point rightTop();
+    static int top();
+    static int down();
+    static int left();
+    static int right();
+    static int height();
+    static int width();
+};
 #endif /* defined(__MyCocosDemo__UIUtil__) */

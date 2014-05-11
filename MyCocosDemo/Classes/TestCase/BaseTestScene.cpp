@@ -9,6 +9,7 @@
 #include "BaseTestScene.h"
 #include "../TestCaseScene.h"
 #include "ui/UIScrollView.h"
+#include "../Tools/UIUtil.h"
 
 BaseTestScene::BaseTestScene()
 {
@@ -38,49 +39,75 @@ void BaseTestScene::onEnter()
     //add the menu item for back to main menu
     auto label = Label::createWithSystemFont("<< Back", "Arial", 50);
     
-    auto menuItem = MenuItemLabel::create(label, testScene_callback );
-    auto menu = Menu::create(menuItem, NULL);
+    m_menuBack = MenuItemLabel::create(label, testScene_callback );
+    auto menu = Menu::create(m_menuBack, NULL);
     menu->setPosition( Point::ZERO );
 
     Size visibleSize = Director::getInstance()->getVisibleSize();
-    Point visibleOrgPoint = Director::getInstance()->getVisibleOrigin();
     
-    menuItem->setAnchorPoint(Point(1,0));
-    menuItem->setPosition( Point( visibleSize.width + visibleOrgPoint.x - 25,
-                                 visibleOrgPoint.y + 25) );
+    m_menuBack->setAnchorPoint(Point(1,0));
+    m_menuBack->setPosition(VisibleUtil::rightBottom());
     addChild(menu, 1);
     
     // add TestMenu for different testcase
     initTestMenu();
     
-    auto testMenu = Menu::createWithArray(vectorOfMenu);
-    testMenu->alignItemsVertically();
+    m_testMenu = Menu::createWithArray(m_vectorOfMenu);
+    m_testMenu->alignItemsVertically();
     
     // sean: doesn't work. why?
     // Layer and Scene m_bIgnoreAnchorPointForPosition = true;
     // Menu's superclass is Layer
 //    testMenu->setAnchorPoint(Point(0,0));
-    testMenu->setPosition(Point::ZERO);
-    
-    for( auto child : testMenu->getChildren() )
+    m_testMenu->setPosition(Point::ZERO);
+    m_testMenu->setContentSize(visibleSize);
+
+    for( auto child : m_testMenu->getChildren() )
     {
         child->setAnchorPoint(Point(1, 0));
         int posY = child->getPositionY();
-        child->setPosition(Point(visibleSize.width - 25, posY + visibleSize.height / 2));
+        child->setPosition(Point(VisibleUtil::right() - 25, posY + visibleSize.height / 2));
     }
     
-    addChild(testMenu);
+    addChild(m_testMenu);
     
-    infoLabel = Label::create();
-    infoLabel->setContentSize(Size(visibleSize.width, 30));
-    infoLabel->setPosition(Point(visibleOrgPoint.x, visibleOrgPoint.y + visibleSize.height));
-    infoLabel->setAnchorPoint(Point::ANCHOR_TOP_LEFT);
-    infoLabel->setSystemFontName("Arial");
-    infoLabel->setSystemFontSize(24);
-    infoLabel->setTextColor(Color4B::ORANGE);
-    infoLabel->setString("DEBUG INFO...");
-    addChild(infoLabel);
+    m_infoLabel = Label::create();
+    m_infoLabel->setContentSize(Size(visibleSize.width, 30));
+    m_infoLabel->setPosition(VisibleUtil::leftTop());
+    m_infoLabel->setAnchorPoint(Point::ANCHOR_TOP_LEFT);
+    m_infoLabel->setSystemFontName("Arial");
+    m_infoLabel->setSystemFontSize(24);
+    m_infoLabel->setTextColor(Color4B::ORANGE);
+    m_infoLabel->setString("DEBUG INFO...");
+    addChild(m_infoLabel);
 }
 
+void BaseTestScene::resetUIPosition()
+{
+    m_infoLabel->setPosition(VisibleUtil::leftTop());
+    m_menuBack->setPosition(VisibleUtil::rightBottom());
+    
+    Size visibleSize = Director::getInstance()->getVisibleSize();
+    m_testMenu->alignItemsVertically();
+
+    m_testMenu->setPosition(Point::ZERO);
+    m_testMenu->setContentSize(visibleSize);
+
+    for( auto child : m_testMenu->getChildren() )
+    {
+        child->setAnchorPoint(Point(1, 0));
+        int posY = child->getPositionY();
+        child->setPosition(Point(VisibleUtil::right() - 25, posY + visibleSize.height / 2));
+    }
+}
+
+void BaseTestScene::addTestMenuItem(cocos2d::MenuItem *menuItem)
+{
+    m_vectorOfMenu.pushBack(menuItem);
+}
+void BaseTestScene::setInfo(std::string info)
+{
+    m_infoLabel->setString(info);
+}
 
 

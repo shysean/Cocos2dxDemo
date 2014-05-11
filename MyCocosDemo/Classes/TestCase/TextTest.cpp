@@ -34,7 +34,7 @@ void TextTest::runThisTest()
 
 void TextTest::initTestMenu()
 {
-    ADD_TEST_METHOD(vectorOfMenu, testGetText);
+    ADD_TEST_METHOD(testGetText);
 }
 
 void TextTest::testGetText()
@@ -45,7 +45,7 @@ void TextTest::testGetText()
     string result1 = GameText::getInstance()->getText("HELLO");
     CCLOG("TextTest::testGetText result = %s", result1.c_str());
     
-    infoLabel->setString(result1);
+    setInfo(result1);
 
     // No key "H"
     string result2 = GameText::getInstance()->getText("H");

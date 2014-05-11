@@ -41,6 +41,9 @@ private:
     
     EditBox* m_editWidth;
     EditBox* m_editHeight;
+    
+    int m_designWidth;
+    int m_designHeight;
 
 private:
     void drawRect(int sx, int sy, int ex, int ey, Color4B color);

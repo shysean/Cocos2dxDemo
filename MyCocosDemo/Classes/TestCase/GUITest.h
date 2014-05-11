@@ -19,8 +19,14 @@ public:
     virtual void runThisTest();
     virtual void initTestMenu();
 
-    void testFunction();
+    void showUILayer();
 
+private:
+    Layer* m_uiLayer;
+    cocos2d::extension::EditBox* m_edit;
+    
+private:
+    void addEditBox();
 };
 
 #endif /* defined(__MyCocosDemo__GUITest__) */

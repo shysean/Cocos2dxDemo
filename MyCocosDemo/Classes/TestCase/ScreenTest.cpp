@@ -11,13 +11,16 @@
 #include "ScreenTest.h"
 #include "../Tools/UIUtil.h"
 
-const int DESIGN_WIDHT = 800;
-const int DESIGN_HEIGHT = 500;
+
 
 ScreenTest::ScreenTest()
 : m_scale(1)
 , m_distance(0)
 {
+    Size designSize = Director::getInstance()->getWinSize();
+    m_designWidth = designSize.width;
+    m_designHeight = designSize.height;
+    
     init();
 }
 ScreenTest::~ScreenTest()
@@ -31,7 +34,7 @@ void ScreenTest::runThisTest()
 }
 void ScreenTest::initTestMenu()
 {
-    ADD_TEST_METHOD(vectorOfMenu, resetDesignSize);
+    ADD_TEST_METHOD(resetDesignSize);
 }
 
 bool ScreenTest::init()
@@ -55,7 +58,7 @@ bool ScreenTest::init()
     //    glview->setDesignResolutionSize(400, 480, ResolutionPolicy::SHOW_ALL);
     
     // ResolutionPolicy::NO_BORDER为了填补留下的黑边，将画面稍微放大，以至于能够正好补齐黑边
-    glview->setDesignResolutionSize(DESIGN_WIDHT, DESIGN_HEIGHT, ResolutionPolicy::NO_BORDER);
+    glview->setDesignResolutionSize(m_designWidth, m_designHeight, ResolutionPolicy::NO_BORDER);
     // 其他参数，参考ResolutionPolicy的注释
     
     Size winSize = Director::getInstance()->getWinSize();
@@ -106,6 +109,7 @@ bool ScreenTest::init()
     return true;
 }
 
+
 // =============================
 //        Test Function
 // =============================
@@ -128,6 +132,7 @@ void ScreenTest::resetDesignSize()
     strWidthValue >> intWidth;
     
     Director::getInstance()->getOpenGLView()->setDesignResolutionSize(intWidth, intHeight, ResolutionPolicy::NO_BORDER);
+    resetUIPosition();
 }
 
 
@@ -145,7 +150,7 @@ void ScreenTest::refeshInfo()
             (int)visibleSize.width, (int)visibleSize.height,
             (int)visibleOrigin.x, (int)visibleOrigin.y);
     
-    infoLabel->setString(info);
+    setInfo(info);
 }
 
 

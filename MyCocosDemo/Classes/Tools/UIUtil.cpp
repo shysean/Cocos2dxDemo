@@ -25,28 +25,64 @@ EditBox* UIUtil::createEditBox(Node* parent, int x, int y, const char* placeHold
 }
 
 
-Point UIUtil::visibleLeftBottom()
+Point VisibleUtil::leftBottom()
 {
     return Director::getInstance()->getVisibleOrigin();
 }
-Point UIUtil::visibleLeftTop()
+Point VisibleUtil::leftTop()
 {
-    Point leftBottom = visibleLeftBottom();
+    Point originPoint = leftBottom();
     Size visibleSize = Director::getInstance()->getVisibleSize();
     
-    return Point(leftBottom.x, leftBottom.y + visibleSize.height);
+    return Point(originPoint.x, originPoint.y + visibleSize.height);
 }
-Point UIUtil::visibleRightBottom()
+Point VisibleUtil::rightBottom()
 {
-    Point leftBottom = visibleLeftBottom();
+    Point originPoint = leftBottom();
     Size visibleSize = Director::getInstance()->getVisibleSize();
     
-    return Point(leftBottom.x + visibleSize.width, leftBottom.y);
+    return Point(originPoint.x + visibleSize.width, originPoint.y);
 }
-Point UIUtil::visibleRightTop()
+Point VisibleUtil::rightTop()
 {
-    Point leftBottom = visibleLeftBottom();
+    Point originPoint = leftBottom();
     Size visibleSize = Director::getInstance()->getVisibleSize();
     
-    return Point(leftBottom.x + visibleSize.width, leftBottom.y + visibleSize.height);
+    return Point(originPoint.x + visibleSize.width, originPoint.y + visibleSize.height);
+}
+int VisibleUtil::top()
+{
+    Point originPoint = leftBottom();
+    Size visibleSize = Director::getInstance()->getVisibleSize();
+    
+    return originPoint.y + visibleSize.height;
+}
+int VisibleUtil::down()
+{
+    Point originPoint = leftBottom();
+
+    return originPoint.y;
+}
+int VisibleUtil::left()
+{
+    Point originPoint = leftBottom();
+
+    return originPoint.x;
+}
+int VisibleUtil::right()
+{
+    Point originPoint = leftBottom();
+    Size visibleSize = Director::getInstance()->getVisibleSize();
+    
+    return originPoint.x + visibleSize.width;
+}
+int VisibleUtil::width()
+{
+    Size visibleSize = Director::getInstance()->getVisibleSize();
+    return visibleSize.width;
+}
+int VisibleUtil::height()
+{
+    Size visibleSize = Director::getInstance()->getVisibleSize();
+    return visibleSize.height;
 }

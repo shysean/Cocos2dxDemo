@@ -21,10 +21,10 @@ void SocketTest::runThisTest()
 
 void SocketTest::initTestMenu()
 {
-    ADD_TEST_METHOD(vectorOfMenu, testFunction);
-    ADD_TEST_METHOD(vectorOfMenu, testFunction1);
-    ADD_TEST_METHOD(vectorOfMenu, testFunction2);
-    ADD_TEST_METHOD(vectorOfMenu, testFunction3);
+    ADD_TEST_METHOD(testFunction);
+    ADD_TEST_METHOD(testFunction1);
+    ADD_TEST_METHOD(testFunction2);
+    ADD_TEST_METHOD(testFunction3);
 }
 
 

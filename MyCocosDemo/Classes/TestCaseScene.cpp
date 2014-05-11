@@ -43,7 +43,7 @@ bool TestCaseScene::init()
     
     GLView *glview = Director::getInstance()->getOpenGLView();
     Size frameSize = glview->getFrameSize();
-    glview->setDesignResolutionSize(frameSize.width, frameSize.height, ResolutionPolicy::SHOW_ALL);
+    glview->setDesignResolutionSize(1280, 768, ResolutionPolicy::NO_BORDER);
     
     Size visibleSize = Director::getInstance()->getVisibleSize();
     Point visibleOrigin = Director::getInstance()->getVisibleOrigin();
