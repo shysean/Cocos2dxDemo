@@ -20,7 +20,7 @@ void #CLASSNAME#::runThisTest()
 
 void #CLASSNAME#::initTestMenu()
 {
-//    ADD_TEST_METHOD(vectorOfMenu, testFunction);
+//    ADD_TEST_METHOD(testFunction);
 }
 
 
@@ -29,5 +29,5 @@ void #CLASSNAME#::initTestMenu()
 // =============================
 void #CLASSNAME#::testFunction()
 {
-//    infoLabel->setString("testFunction");
+//    setInfo(“testFunction");
 }
