@@ -40,7 +40,7 @@ void BaseTestScene::onEnter()
     auto label = Label::createWithSystemFont("<< Back", "Arial", 50);
     
     m_menuBack = MenuItemLabel::create(label, testScene_callback );
-    auto menu = Menu::create(m_menuBack, NULL);
+    auto menu = Menu::create(m_menuBack, nullptr);
     menu->setPosition( Point::ZERO );
 
     Size visibleSize = Director::getInstance()->getVisibleSize();

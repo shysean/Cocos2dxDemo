@@ -7,6 +7,7 @@
 //
 
 #include "SocketTest.h"
+#include "../Tools/TimeUtil.h"
 
 SocketTest::SocketTest()
 {
@@ -30,12 +31,19 @@ void SocketTest::initTestMenu()
 
 void SocketTest::testFunction()
 {
-    log("SocketTest::testFunction");
+    long long time = TimeUtil::currentTimeMillis();
+    char info[255];
+    sprintf(info, "TIME=%lld", time);
+    setInfo(info);
 }
 
 void SocketTest::testFunction1()
 {
-    log("SocketTest::testFunction");
+    time_t t = time( 0 );
+    char info[255];
+    strftime(info, 255, "%Y-%m-%d %H:%M:%S", localtime(&t));
+    setInfo(info);
+
 }
 
 

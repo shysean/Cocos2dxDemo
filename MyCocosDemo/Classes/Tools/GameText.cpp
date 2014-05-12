@@ -8,10 +8,11 @@
 
 #include "GameText.h"
 #include "tinyxml2/tinyxml2.h"
+#include "../TestCase/BaseTestScene.h"
 
 using namespace tinyxml2;
 
-// text folder need add as references in Xcode
+// res folder need add as references in Xcode
 // Don't add as group, if not cocos will can't find the file.
 const string STRING_XML_FILE = "text/string.xml";
 
@@ -61,12 +62,15 @@ bool GameText::init()
     // return errorCode is XML_ERROR_FILE_NOT_FOUND(=3)
     // XMLError error = myDocument->LoadFile(fullPath.c_str());
     
+    
     ssize_t size;
     char *pFileContent = (char*)FileUtils::getInstance()->getFileData(STRING_XML_FILE , "r", &size);
     
     // Parse() is OK!
     XMLError error = document->Parse(pFileContent);
     
+    // if "_" in attribute value on Android
+    // return errorCode is XML_ERROR_PARSING_TEXT(=10)
     if(error != XML_SUCCESS)
     {
         CCLOGERROR("GameText.init: LoadFile Failed! Error Code = %d", error);
@@ -101,12 +105,20 @@ string GameText::getText(string key)
 
     if (m_isReady == false) {
         CCLOGWARN("GameText.getText: GameText is not ready.");
+        // why sometime m_isReady == false?
+        m_isReady = init();
+        
+        if (m_isReady == false)
+        {
 #if defined COCOS2D_DEBUG
-        result = "NO READY!";
+            result = "NO READY!";
 #else
-        result = "";
-#endif    
-        return result;
+            result = "";
+#endif
+            return result;
+        }
+        return getText(key);
+
     }
     
     try {

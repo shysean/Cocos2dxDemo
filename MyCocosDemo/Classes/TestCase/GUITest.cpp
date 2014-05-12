@@ -13,7 +13,7 @@ USING_NS_CC_EXT;
 
 
 GUITest::GUITest()
-: m_edit(NULL)
+: m_edit(nullptr)
 {
 
 }
@@ -29,7 +29,6 @@ void GUITest::runThisTest()
 
 void GUITest::initTestMenu()
 {
-//    ADD_TEST_METHOD(vectorOfMenu, showUILayer);
     ADD_TEST_METHOD(addEditBox);
 }
 
@@ -39,7 +38,7 @@ void GUITest::showUILayer()
 
 void GUITest::addEditBox()
 {
-    if (m_edit == NULL) {
+    if (m_edit == nullptr) {
         m_edit = UIUtil::createEditBox(m_uiLayer, 100, 100, "Input Name");
     }
 }

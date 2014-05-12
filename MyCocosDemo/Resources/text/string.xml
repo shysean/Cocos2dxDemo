@@ -13,4 +13,5 @@
     <string name="HELLO10">hello world10!</string>
     <string name="HELLO11">hello world11!</string>
     <string name="HELLO12">hello world12!</string>
+    <string name="FONTTESTINFO">测试微软雅黑字体</string>
 </resources>

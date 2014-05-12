@@ -24,6 +24,7 @@ public:
     virtual bool init() override;
     
     void testGetText();
+    void testCustomFont();
 
 };
 
