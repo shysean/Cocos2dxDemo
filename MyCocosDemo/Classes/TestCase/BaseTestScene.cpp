@@ -21,6 +21,13 @@ BaseTestScene::BaseTestScene()
 BaseTestScene::~BaseTestScene()
 {
 //    CCLOG("BaseTestScene Destructor.");
+    Director::getInstance()->purgeCachedData();
+//    SpriteFrameCache::getInstance()->removeSpriteFrames();
+//    SpriteFrameCache::destroyInstance();
+//    Director::getInstance()->getTextureCache()->removeAllTextures();
+
+    m_vectorOfMenu.clear();
+        
 }
 
 void testScene_callback(Ref *sender )
@@ -28,7 +35,7 @@ void testScene_callback(Ref *sender )
     auto scene = new TestCaseScene();
     
     Director::getInstance()->replaceScene(scene);
-    
+
 }
 
 void BaseTestScene::onEnter()

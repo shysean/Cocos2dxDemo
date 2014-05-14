@@ -12,6 +12,7 @@
 #include "TestCase/ScreenTest.h"
 #include "TestCase/GUITest.h"
 #include "TestCase/ParticleTest.h"
+#include "TestCase/ResourceTest.h"
 
 
 Controller g_aTestNames[] = {
@@ -20,6 +21,7 @@ Controller g_aTestNames[] = {
     CREATE_TEST_SCENE("ScreenTest", ScreenTest)
     CREATE_TEST_SCENE("GUITest", GUITest)
     CREATE_TEST_SCENE("ParticleTest", ParticleTest)
+    CREATE_TEST_SCENE("ResourceTest", ResourceTest)
 
 };
 
@@ -38,6 +40,7 @@ TestCaseScene::TestCaseScene()
 TestCaseScene::~TestCaseScene()
 {
     CCLOG("~TestCaseScene");
+    Scene::onExit();
 }
 
 bool TestCaseScene::init()

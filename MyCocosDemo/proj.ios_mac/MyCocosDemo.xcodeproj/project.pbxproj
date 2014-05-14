@@ -19,6 +19,8 @@
 		1419E4AE191FD5F00066BC28 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 1419E4AC191FD5F00066BC28 /* fonts */; };
 		144381CB1920DD7900F394E1 /* TimeUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 144381C91920DD7900F394E1 /* TimeUtil.cpp */; };
 		144381CC1920DD7900F394E1 /* TimeUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 144381C91920DD7900F394E1 /* TimeUtil.cpp */; };
+		144381D31922691800F394E1 /* ResourceTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 144381D11922691800F394E1 /* ResourceTest.cpp */; };
+		144381D41922691800F394E1 /* ResourceTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 144381D11922691800F394E1 /* ResourceTest.cpp */; };
 		14772C5F191682C400A3F416 /* text in Resources */ = {isa = PBXBuildFile; fileRef = 14772C5E191682C400A3F416 /* text */; };
 		14772C60191682C400A3F416 /* text in Resources */ = {isa = PBXBuildFile; fileRef = 14772C5E191682C400A3F416 /* text */; };
 		14772C8F1916A3D000A3F416 /* GameText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14772C8D1916A3D000A3F416 /* GameText.cpp */; };
@@ -33,6 +35,14 @@
 		14AEA95B191D226800EE332E /* SocketTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14AEA958191D226800EE332E /* SocketTest.cpp */; };
 		14AEA95E191E296B00EE332E /* GUITest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14AEA95C191E296B00EE332E /* GUITest.cpp */; };
 		14AEA95F191E296B00EE332E /* GUITest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14AEA95C191E296B00EE332E /* GUITest.cpp */; };
+		14F7EB5A1923AD0300BAE980 /* texturePacker in Resources */ = {isa = PBXBuildFile; fileRef = 14F7EB591923AD0300BAE980 /* texturePacker */; };
+		14F7EB5B1923AD0300BAE980 /* texturePacker in Resources */ = {isa = PBXBuildFile; fileRef = 14F7EB591923AD0300BAE980 /* texturePacker */; };
+		14F7EB5E1923CA2800BAE980 /* png.bin in Resources */ = {isa = PBXBuildFile; fileRef = 14F7EB5C1923CA2800BAE980 /* png.bin */; };
+		14F7EB5F1923CA2800BAE980 /* png.bin in Resources */ = {isa = PBXBuildFile; fileRef = 14F7EB5C1923CA2800BAE980 /* png.bin */; };
+		14F7EB601923CA2800BAE980 /* png.idx in Resources */ = {isa = PBXBuildFile; fileRef = 14F7EB5D1923CA2800BAE980 /* png.idx */; };
+		14F7EB611923CA2800BAE980 /* png.idx in Resources */ = {isa = PBXBuildFile; fileRef = 14F7EB5D1923CA2800BAE980 /* png.idx */; };
+		14F7EB651923D9D200BAE980 /* StringUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14F7EB631923D9D200BAE980 /* StringUtil.cpp */; };
+		14F7EB661923D9D200BAE980 /* StringUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14F7EB631923D9D200BAE980 /* StringUtil.cpp */; };
 		14F87266190FE67A0001C020 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14F8725A190FE67A0001C020 /* AppDelegate.cpp */; };
 		14F87267190FE67A0001C020 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14F8725A190FE67A0001C020 /* AppDelegate.cpp */; };
 		14F8726A190FE67A0001C020 /* BaseTestScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14F8725F190FE67A0001C020 /* BaseTestScene.cpp */; };
@@ -250,6 +260,8 @@
 		1419E4AC191FD5F00066BC28 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		144381C91920DD7900F394E1 /* TimeUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TimeUtil.cpp; sourceTree = "<group>"; };
 		144381CA1920DD7900F394E1 /* TimeUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeUtil.h; sourceTree = "<group>"; };
+		144381D11922691800F394E1 /* ResourceTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ResourceTest.cpp; sourceTree = "<group>"; };
+		144381D21922691800F394E1 /* ResourceTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceTest.h; sourceTree = "<group>"; };
 		14772C5E191682C400A3F416 /* text */ = {isa = PBXFileReference; lastKnownFileType = folder; path = text; sourceTree = "<group>"; };
 		14772C8D1916A3D000A3F416 /* GameText.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameText.cpp; sourceTree = "<group>"; };
 		14772C8E1916A3D000A3F416 /* GameText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameText.h; sourceTree = "<group>"; };
@@ -263,6 +275,11 @@
 		14AEA959191D226800EE332E /* SocketTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketTest.h; sourceTree = "<group>"; };
 		14AEA95C191E296B00EE332E /* GUITest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GUITest.cpp; sourceTree = "<group>"; };
 		14AEA95D191E296B00EE332E /* GUITest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUITest.h; sourceTree = "<group>"; };
+		14F7EB591923AD0300BAE980 /* texturePacker */ = {isa = PBXFileReference; lastKnownFileType = folder; path = texturePacker; sourceTree = "<group>"; };
+		14F7EB5C1923CA2800BAE980 /* png.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = png.bin; sourceTree = "<group>"; };
+		14F7EB5D1923CA2800BAE980 /* png.idx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = png.idx; sourceTree = "<group>"; };
+		14F7EB631923D9D200BAE980 /* StringUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringUtil.cpp; sourceTree = "<group>"; };
+		14F7EB641923D9D200BAE980 /* StringUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringUtil.h; sourceTree = "<group>"; };
 		14F8725A190FE67A0001C020 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
 		14F8725B190FE67A0001C020 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		14F8725F190FE67A0001C020 /* BaseTestScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseTestScene.cpp; sourceTree = "<group>"; };
@@ -399,6 +416,15 @@
 			name = GUITest;
 			sourceTree = "<group>";
 		};
+		144381D71922691B00F394E1 /* ResourcesTest */ = {
+			isa = PBXGroup;
+			children = (
+				144381D11922691800F394E1 /* ResourceTest.cpp */,
+				144381D21922691800F394E1 /* ResourceTest.h */,
+			);
+			name = ResourcesTest;
+			sourceTree = "<group>";
+		};
 		14772C881916A32200A3F416 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -408,6 +434,8 @@
 				1419E49E191E4A540066BC28 /* UIUtil.h */,
 				144381C91920DD7900F394E1 /* TimeUtil.cpp */,
 				144381CA1920DD7900F394E1 /* TimeUtil.h */,
+				14F7EB631923D9D200BAE980 /* StringUtil.cpp */,
+				14F7EB641923D9D200BAE980 /* StringUtil.h */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -456,6 +484,7 @@
 		14F8725E190FE67A0001C020 /* TestCase */ = {
 			isa = PBXGroup;
 			children = (
+				144381D71922691B00F394E1 /* ResourcesTest */,
 				144381C61920D92300F394E1 /* GUITest */,
 				1419E4A4191F8FCF0066BC28 /* ParticleTest */,
 				14AEA957191D225C00EE332E /* SocketTest */,
@@ -577,6 +606,9 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				14F7EB5C1923CA2800BAE980 /* png.bin */,
+				14F7EB5D1923CA2800BAE980 /* png.idx */,
+				14F7EB591923AD0300BAE980 /* texturePacker */,
 				1419E4AC191FD5F00066BC28 /* fonts */,
 				1419E4A9191F9E5F0066BC28 /* particle */,
 				1419E498191E484C0066BC28 /* image */,
@@ -756,6 +788,7 @@
 				5087E78117EB970100C73F5D /* Icon-120.png in Resources */,
 				5087E78617EB970100C73F5D /* Icon-76.png in Resources */,
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
+				14F7EB601923CA2800BAE980 /* png.idx in Resources */,
 				50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */,
 				1AFAF8BC16D35E4900DB1158 /* CloseNormal.png in Resources */,
 				5087E78317EB970100C73F5D /* Icon-152.png in Resources */,
@@ -767,12 +800,14 @@
 				1AFAF8BD16D35E4900DB1158 /* CloseSelected.png in Resources */,
 				50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */,
 				5087E78017EB970100C73F5D /* Icon-114.png in Resources */,
+				14F7EB5E1923CA2800BAE980 /* png.bin in Resources */,
 				1AFAF8BE16D35E4900DB1158 /* HelloWorld.png in Resources */,
 				50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */,
 				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
+				14F7EB5A1923AD0300BAE980 /* texturePacker in Resources */,
 				1419E499191E484C0066BC28 /* image in Resources */,
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
@@ -785,12 +820,15 @@
 			files = (
 				1419E49A191E484C0066BC28 /* image in Resources */,
 				5087E75317EB910900C73F5D /* CloseNormal.png in Resources */,
+				14F7EB5B1923AD0300BAE980 /* texturePacker in Resources */,
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
 				5087E75417EB910900C73F5D /* CloseSelected.png in Resources */,
 				5087E75517EB910900C73F5D /* HelloWorld.png in Resources */,
 				1419E4AB191F9E5F0066BC28 /* particle in Resources */,
 				14772C60191682C400A3F416 /* text in Resources */,
 				1419E4AE191FD5F00066BC28 /* fonts in Resources */,
+				14F7EB611923CA2800BAE980 /* png.idx in Resources */,
+				14F7EB5F1923CA2800BAE980 /* png.bin in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -805,6 +843,7 @@
 				1419E4A7191F8FDC0066BC28 /* ParticleTest.cpp in Sources */,
 				1419E49F191E4A540066BC28 /* UIUtil.cpp in Sources */,
 				14F8726A190FE67A0001C020 /* BaseTestScene.cpp in Sources */,
+				14F7EB651923D9D200BAE980 /* StringUtil.cpp in Sources */,
 				14AEA952191D1FDC00EE332E /* ScreenTest.cpp in Sources */,
 				14772C8F1916A3D000A3F416 /* GameText.cpp in Sources */,
 				14AACF98191A5057001DE502 /* TestCaseScene.cpp in Sources */,
@@ -813,6 +852,7 @@
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				14AEA95E191E296B00EE332E /* GUITest.cpp in Sources */,
+				144381D31922691800F394E1 /* ResourceTest.cpp in Sources */,
 				14AEA95A191D226800EE332E /* SocketTest.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 			);
@@ -825,8 +865,10 @@
 				14F87267190FE67A0001C020 /* AppDelegate.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 				1419E4A8191F8FE10066BC28 /* ParticleTest.cpp in Sources */,
+				144381D41922691800F394E1 /* ResourceTest.cpp in Sources */,
 				14AEA953191D1FDC00EE332E /* ScreenTest.cpp in Sources */,
 				14AEA95B191D226800EE332E /* SocketTest.cpp in Sources */,
+				14F7EB661923D9D200BAE980 /* StringUtil.cpp in Sources */,
 				14772C901916A3D000A3F416 /* GameText.cpp in Sources */,
 				144381CC1920DD7900F394E1 /* TimeUtil.cpp in Sources */,
 				1419E4A0191E4A540066BC28 /* UIUtil.cpp in Sources */,

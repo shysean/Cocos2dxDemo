@@ -7,10 +7,11 @@ import ctypes
 import os.path
 
 
-RES_PATH = "../Resources";
+RES_PATH = "../Resources"
+OUT_BIN_FILE = os.path.join(RES_PATH, "png.bin")
+OUT_INDEX_FILE = os.path.join(RES_PATH, "png.idx")
 
 # 获取所有png文件base64编码后的总大小
-
 size = 0
 
 for dirpath, dirnames, filenames in os.walk(RES_PATH):
@@ -21,10 +22,8 @@ for dirpath, dirnames, filenames in os.walk(RES_PATH):
 
 print "total size=",size
 
-
-
 # png索引文件 (filename,offset,size)
-indexFile = open("png.idx","wb")
+indexFile = open(OUT_INDEX_FILE,"wb")
 
 # 全部图片的缓存数据
 prebuffer = ctypes.create_string_buffer(size);
@@ -42,7 +41,6 @@ for dirpath, dirnames, filenames in os.walk(RES_PATH):
                 # 索引信息
                 a = [os.path.join(dirpath.replace(RES_PATH,''),filename), ',', str(offset), ',', str(length), '\n']
                 indexInfo = '%s%s%s%s%s%s' % tuple(a)
-                print indexInfo
                 #写入索引文件
                 indexFile.write(indexInfo)
                 #添加到数据缓存
@@ -50,9 +48,12 @@ for dirpath, dirnames, filenames in os.walk(RES_PATH):
                 s.pack_into(prebuffer, offset, encoded_string)
                 offset += s.size
 
+                print indexInfo
+
+
 indexFile.close()
 
 # 写入二进制文件
-binfile = open("bin","wb")
+binfile = open(OUT_BIN_FILE,"wb")
 binfile.write(prebuffer)
 binfile.close()
