@@ -43,6 +43,8 @@
 		14F7EB611923CA2800BAE980 /* png.idx in Resources */ = {isa = PBXBuildFile; fileRef = 14F7EB5D1923CA2800BAE980 /* png.idx */; };
 		14F7EB651923D9D200BAE980 /* StringUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14F7EB631923D9D200BAE980 /* StringUtil.cpp */; };
 		14F7EB661923D9D200BAE980 /* StringUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14F7EB631923D9D200BAE980 /* StringUtil.cpp */; };
+		14F7EB6D1924822800BAE980 /* FileUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14F7EB6B1924822800BAE980 /* FileUtil.cpp */; };
+		14F7EB6E1924822800BAE980 /* FileUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14F7EB6B1924822800BAE980 /* FileUtil.cpp */; };
 		14F87266190FE67A0001C020 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14F8725A190FE67A0001C020 /* AppDelegate.cpp */; };
 		14F87267190FE67A0001C020 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14F8725A190FE67A0001C020 /* AppDelegate.cpp */; };
 		14F8726A190FE67A0001C020 /* BaseTestScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14F8725F190FE67A0001C020 /* BaseTestScene.cpp */; };
@@ -280,6 +282,8 @@
 		14F7EB5D1923CA2800BAE980 /* png.idx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = png.idx; sourceTree = "<group>"; };
 		14F7EB631923D9D200BAE980 /* StringUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringUtil.cpp; sourceTree = "<group>"; };
 		14F7EB641923D9D200BAE980 /* StringUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringUtil.h; sourceTree = "<group>"; };
+		14F7EB6B1924822800BAE980 /* FileUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileUtil.cpp; sourceTree = "<group>"; };
+		14F7EB6C1924822800BAE980 /* FileUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileUtil.h; sourceTree = "<group>"; };
 		14F8725A190FE67A0001C020 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
 		14F8725B190FE67A0001C020 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		14F8725F190FE67A0001C020 /* BaseTestScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseTestScene.cpp; sourceTree = "<group>"; };
@@ -436,6 +440,8 @@
 				144381CA1920DD7900F394E1 /* TimeUtil.h */,
 				14F7EB631923D9D200BAE980 /* StringUtil.cpp */,
 				14F7EB641923D9D200BAE980 /* StringUtil.h */,
+				14F7EB6B1924822800BAE980 /* FileUtil.cpp */,
+				14F7EB6C1924822800BAE980 /* FileUtil.h */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -841,6 +847,7 @@
 			files = (
 				14F87266190FE67A0001C020 /* AppDelegate.cpp in Sources */,
 				1419E4A7191F8FDC0066BC28 /* ParticleTest.cpp in Sources */,
+				14F7EB6D1924822800BAE980 /* FileUtil.cpp in Sources */,
 				1419E49F191E4A540066BC28 /* UIUtil.cpp in Sources */,
 				14F8726A190FE67A0001C020 /* BaseTestScene.cpp in Sources */,
 				14F7EB651923D9D200BAE980 /* StringUtil.cpp in Sources */,
@@ -869,6 +876,7 @@
 				14AEA953191D1FDC00EE332E /* ScreenTest.cpp in Sources */,
 				14AEA95B191D226800EE332E /* SocketTest.cpp in Sources */,
 				14F7EB661923D9D200BAE980 /* StringUtil.cpp in Sources */,
+				14F7EB6E1924822800BAE980 /* FileUtil.cpp in Sources */,
 				14772C901916A3D000A3F416 /* GameText.cpp in Sources */,
 				144381CC1920DD7900F394E1 /* TimeUtil.cpp in Sources */,
 				1419E4A0191E4A540066BC28 /* UIUtil.cpp in Sources */,

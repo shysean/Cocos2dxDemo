@@ -22,11 +22,12 @@ public:
     void testTexturePacker();
     void testStringBase64();
     void testPngBase64();
-    void testCreateSpriteWithData();
-    void testGetDataFromBinFile();
+    void testCreateSpriteWithFileData();
+    void testCreateSpriteWithStringData();
+    void testCreateSpriteWithBinFile();
     void testReadIndexFile();
-
     
+private:
     void showImageUsingData(unsigned char *data, unsigned long dataSize);
 };
 

@@ -9,8 +9,14 @@
 #ifndef __MyCocosDemo__StringUtil__
 #define __MyCocosDemo__StringUtil__
 
-#include <iostream>
 #include <vector>
+#include <sstream>
+#include <stdlib.h>     /* atoi */
+#include <stdio.h>      /* printf, fgets */
+#include <string>
+#include <algorithm>
+#include <ctype.h>
+#include <iostream>
 
 class StringUtil
 {

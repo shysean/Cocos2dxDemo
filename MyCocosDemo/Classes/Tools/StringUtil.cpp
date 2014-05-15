@@ -5,7 +5,7 @@
 //  Created by shihongyang on 5/15/14.
 //
 //
-#include <sstream>
+
 #include "StringUtil.h"
 
 std::vector<std::string>& StringUtil::split(const std::string& source, char delim, std::vector<std::string>& tokens)
