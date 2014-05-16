@@ -1,3 +1,4 @@
+#TODO:
 - 跨平台实现
 - Eclipse下的Android Debug
 - Socket实现
@@ -10,4 +11,8 @@
 - sqliteDemo
 - 字符串国际化Demo（XML读取）
 - 音乐生效Demo
-...
+
+
+
+#DONE:
+- 分辨率Demo
