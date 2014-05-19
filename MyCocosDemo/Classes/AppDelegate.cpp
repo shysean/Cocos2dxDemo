@@ -1,5 +1,4 @@
 #include "AppDelegate.h"
-//#include "HelloWorldScene.h"
 #include "TestCaseScene.h"
 
 USING_NS_CC;
@@ -18,6 +17,10 @@ bool AppDelegate::applicationDidFinishLaunching() {
     auto glview = director->getOpenGLView();
     if(!glview) {
         glview = GLView::create("CocosDemo");
+//  sean: set frameSize on mac platform
+#if CC_TARGET_PLATFORM == CC_PLATFORM_MAC
+        glview->setFrameSize(800, 480);
+#endif
         director->setOpenGLView(glview);
     }
     

@@ -17,6 +17,8 @@
 		1419E4AB191F9E5F0066BC28 /* particle in Resources */ = {isa = PBXBuildFile; fileRef = 1419E4A9191F9E5F0066BC28 /* particle */; };
 		1419E4AD191FD5F00066BC28 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 1419E4AC191FD5F00066BC28 /* fonts */; };
 		1419E4AE191FD5F00066BC28 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 1419E4AC191FD5F00066BC28 /* fonts */; };
+		14329A5E1927874300966188 /* XdeltaTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14329A5C1927874300966188 /* XdeltaTest.cpp */; };
+		14329A5F1927874300966188 /* XdeltaTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14329A5C1927874300966188 /* XdeltaTest.cpp */; };
 		144381CB1920DD7900F394E1 /* TimeUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 144381C91920DD7900F394E1 /* TimeUtil.cpp */; };
 		144381CC1920DD7900F394E1 /* TimeUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 144381C91920DD7900F394E1 /* TimeUtil.cpp */; };
 		144381D31922691800F394E1 /* ResourceTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 144381D11922691800F394E1 /* ResourceTest.cpp */; };
@@ -35,6 +37,8 @@
 		14AEA95B191D226800EE332E /* SocketTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14AEA958191D226800EE332E /* SocketTest.cpp */; };
 		14AEA95E191E296B00EE332E /* GUITest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14AEA95C191E296B00EE332E /* GUITest.cpp */; };
 		14AEA95F191E296B00EE332E /* GUITest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14AEA95C191E296B00EE332E /* GUITest.cpp */; };
+		14BA2A251927CC9A008AD0D8 /* xdelta3.c in Sources */ = {isa = PBXBuildFile; fileRef = 14BA2A191927CC9A008AD0D8 /* xdelta3.c */; };
+		14BA2A261927CC9A008AD0D8 /* xdelta3.c in Sources */ = {isa = PBXBuildFile; fileRef = 14BA2A191927CC9A008AD0D8 /* xdelta3.c */; };
 		14F7EB5A1923AD0300BAE980 /* texturePacker in Resources */ = {isa = PBXBuildFile; fileRef = 14F7EB591923AD0300BAE980 /* texturePacker */; };
 		14F7EB5B1923AD0300BAE980 /* texturePacker in Resources */ = {isa = PBXBuildFile; fileRef = 14F7EB591923AD0300BAE980 /* texturePacker */; };
 		14F7EB5E1923CA2800BAE980 /* png.bin in Resources */ = {isa = PBXBuildFile; fileRef = 14F7EB5C1923CA2800BAE980 /* png.bin */; };
@@ -260,6 +264,8 @@
 		1419E4A6191F8FDC0066BC28 /* ParticleTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleTest.h; sourceTree = "<group>"; };
 		1419E4A9191F9E5F0066BC28 /* particle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = particle; sourceTree = "<group>"; };
 		1419E4AC191FD5F00066BC28 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
+		14329A5C1927874300966188 /* XdeltaTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XdeltaTest.cpp; sourceTree = "<group>"; };
+		14329A5D1927874300966188 /* XdeltaTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XdeltaTest.h; sourceTree = "<group>"; };
 		144381C91920DD7900F394E1 /* TimeUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TimeUtil.cpp; sourceTree = "<group>"; };
 		144381CA1920DD7900F394E1 /* TimeUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeUtil.h; sourceTree = "<group>"; };
 		144381D11922691800F394E1 /* ResourceTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ResourceTest.cpp; sourceTree = "<group>"; };
@@ -277,6 +283,21 @@
 		14AEA959191D226800EE332E /* SocketTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketTest.h; sourceTree = "<group>"; };
 		14AEA95C191E296B00EE332E /* GUITest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GUITest.cpp; sourceTree = "<group>"; };
 		14AEA95D191E296B00EE332E /* GUITest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUITest.h; sourceTree = "<group>"; };
+		14BA2A161927CC9A008AD0D8 /* xdelta3-main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "xdelta3-main.h"; path = "xdelta/xdelta3-main.h"; sourceTree = "<group>"; };
+		14BA2A171927CC9A008AD0D8 /* xdelta3-lzma.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "xdelta3-lzma.h"; path = "xdelta/xdelta3-lzma.h"; sourceTree = "<group>"; };
+		14BA2A181927CC9A008AD0D8 /* xdelta3-second.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "xdelta3-second.h"; path = "xdelta/xdelta3-second.h"; sourceTree = "<group>"; };
+		14BA2A191927CC9A008AD0D8 /* xdelta3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = xdelta3.c; path = xdelta/xdelta3.c; sourceTree = "<group>"; };
+		14BA2A1A1927CC9A008AD0D8 /* xdelta3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xdelta3.h; path = xdelta/xdelta3.h; sourceTree = "<group>"; };
+		14BA2A1B1927CC9A008AD0D8 /* xdelta3-test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "xdelta3-test.h"; path = "xdelta/xdelta3-test.h"; sourceTree = "<group>"; };
+		14BA2A1C1927CC9A008AD0D8 /* xdelta3-internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "xdelta3-internal.h"; path = "xdelta/xdelta3-internal.h"; sourceTree = "<group>"; };
+		14BA2A1D1927CC9A008AD0D8 /* xdelta3-blkcache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "xdelta3-blkcache.h"; path = "xdelta/xdelta3-blkcache.h"; sourceTree = "<group>"; };
+		14BA2A1E1927CC9A008AD0D8 /* xdelta3-cfgs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "xdelta3-cfgs.h"; path = "xdelta/xdelta3-cfgs.h"; sourceTree = "<group>"; };
+		14BA2A1F1927CC9A008AD0D8 /* xdelta3-decode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "xdelta3-decode.h"; path = "xdelta/xdelta3-decode.h"; sourceTree = "<group>"; };
+		14BA2A201927CC9A008AD0D8 /* xdelta3-djw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "xdelta3-djw.h"; path = "xdelta/xdelta3-djw.h"; sourceTree = "<group>"; };
+		14BA2A211927CC9A008AD0D8 /* xdelta3-fgk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "xdelta3-fgk.h"; path = "xdelta/xdelta3-fgk.h"; sourceTree = "<group>"; };
+		14BA2A221927CC9A008AD0D8 /* xdelta3-hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "xdelta3-hash.h"; path = "xdelta/xdelta3-hash.h"; sourceTree = "<group>"; };
+		14BA2A231927CC9A008AD0D8 /* xdelta3-list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "xdelta3-list.h"; path = "xdelta/xdelta3-list.h"; sourceTree = "<group>"; };
+		14BA2A241927CC9A008AD0D8 /* xdelta3-merge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "xdelta3-merge.h"; path = "xdelta/xdelta3-merge.h"; sourceTree = "<group>"; };
 		14F7EB591923AD0300BAE980 /* texturePacker */ = {isa = PBXFileReference; lastKnownFileType = folder; path = texturePacker; sourceTree = "<group>"; };
 		14F7EB5C1923CA2800BAE980 /* png.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = png.bin; sourceTree = "<group>"; };
 		14F7EB5D1923CA2800BAE980 /* png.idx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = png.idx; sourceTree = "<group>"; };
@@ -411,6 +432,15 @@
 			name = ParticleTest;
 			sourceTree = "<group>";
 		};
+		14329A571927872200966188 /* Xdelta */ = {
+			isa = PBXGroup;
+			children = (
+				14329A5C1927874300966188 /* XdeltaTest.cpp */,
+				14329A5D1927874300966188 /* XdeltaTest.h */,
+			);
+			name = Xdelta;
+			sourceTree = "<group>";
+		};
 		144381C61920D92300F394E1 /* GUITest */ = {
 			isa = PBXGroup;
 			children = (
@@ -432,6 +462,7 @@
 		14772C881916A32200A3F416 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				14BA2A121927BFAD008AD0D8 /* xdelta */,
 				14772C8D1916A3D000A3F416 /* GameText.cpp */,
 				14772C8E1916A3D000A3F416 /* GameText.h */,
 				1419E49D191E4A540066BC28 /* UIUtil.cpp */,
@@ -473,6 +504,28 @@
 			name = SocketTest;
 			sourceTree = "<group>";
 		};
+		14BA2A121927BFAD008AD0D8 /* xdelta */ = {
+			isa = PBXGroup;
+			children = (
+				14BA2A161927CC9A008AD0D8 /* xdelta3-main.h */,
+				14BA2A171927CC9A008AD0D8 /* xdelta3-lzma.h */,
+				14BA2A181927CC9A008AD0D8 /* xdelta3-second.h */,
+				14BA2A191927CC9A008AD0D8 /* xdelta3.c */,
+				14BA2A1A1927CC9A008AD0D8 /* xdelta3.h */,
+				14BA2A1B1927CC9A008AD0D8 /* xdelta3-test.h */,
+				14BA2A1C1927CC9A008AD0D8 /* xdelta3-internal.h */,
+				14BA2A1D1927CC9A008AD0D8 /* xdelta3-blkcache.h */,
+				14BA2A1E1927CC9A008AD0D8 /* xdelta3-cfgs.h */,
+				14BA2A1F1927CC9A008AD0D8 /* xdelta3-decode.h */,
+				14BA2A201927CC9A008AD0D8 /* xdelta3-djw.h */,
+				14BA2A211927CC9A008AD0D8 /* xdelta3-fgk.h */,
+				14BA2A221927CC9A008AD0D8 /* xdelta3-hash.h */,
+				14BA2A231927CC9A008AD0D8 /* xdelta3-list.h */,
+				14BA2A241927CC9A008AD0D8 /* xdelta3-merge.h */,
+			);
+			name = xdelta;
+			sourceTree = "<group>";
+		};
 		14F87259190FE67A0001C020 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -490,6 +543,7 @@
 		14F8725E190FE67A0001C020 /* TestCase */ = {
 			isa = PBXGroup;
 			children = (
+				14329A571927872200966188 /* Xdelta */,
 				144381D71922691B00F394E1 /* ResourcesTest */,
 				144381C61920D92300F394E1 /* GUITest */,
 				1419E4A4191F8FCF0066BC28 /* ParticleTest */,
@@ -854,8 +908,10 @@
 				14AEA952191D1FDC00EE332E /* ScreenTest.cpp in Sources */,
 				14772C8F1916A3D000A3F416 /* GameText.cpp in Sources */,
 				14AACF98191A5057001DE502 /* TestCaseScene.cpp in Sources */,
+				14329A5E1927874300966188 /* XdeltaTest.cpp in Sources */,
 				14AACFA4191A50A6001DE502 /* TextTest.cpp in Sources */,
 				144381CB1920DD7900F394E1 /* TimeUtil.cpp in Sources */,
+				14BA2A251927CC9A008AD0D8 /* xdelta3.c in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				14AEA95E191E296B00EE332E /* GUITest.cpp in Sources */,
@@ -869,7 +925,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14BA2A261927CC9A008AD0D8 /* xdelta3.c in Sources */,
 				14F87267190FE67A0001C020 /* AppDelegate.cpp in Sources */,
+				14329A5F1927874300966188 /* XdeltaTest.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 				1419E4A8191F8FE10066BC28 /* ParticleTest.cpp in Sources */,
 				144381D41922691800F394E1 /* ResourceTest.cpp in Sources */,

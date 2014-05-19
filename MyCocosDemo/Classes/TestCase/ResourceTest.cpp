@@ -46,7 +46,8 @@ void ResourceTest::initTestMenu()
 }
 
 
-struct IndexFile {
+struct IndexFile
+{
     std::string filename;
     int offset;
     int size;
@@ -73,24 +74,24 @@ struct IndexFile {
 void ResourceTest::showImageUsingData(unsigned char *data, unsigned long dataSize)
 {
 	if(data == NULL) {
-		CCLOG("BigFileTest: data is null");
+		CCLOG("ResourceTest: data is null");
 		return;
 	}
 	
-	CCLOG("BigFileTest: data has read. size=%ld", dataSize);
+	CCLOG("ResourceTest: data has read. size=%ld", dataSize);
 	
 	CCLOG("%s", data);
 	Image* image = new Image();
 	bool flag;
 //	flag = image->initWithImageData(data, dataSize, Image::Format::PNG);
     flag = image->initWithImageData(data, dataSize);
-	CCLOG("BigFileTest: CCImage flag=%d", flag);
+	CCLOG("ResourceTest: CCImage flag=%d", flag);
 	
 //	Director::getInstance()->getTextureCache()->addImage(image, "testImage");
 	
 	Texture2D* texture = new Texture2D();
 	flag = texture->initWithImage(image);
-	CCLOG("BigFileTest: Texture2D flag=%d", flag);
+	CCLOG("ResourceTest: Texture2D flag=%d", flag);
 	
 	Sprite* sprite = Sprite::create();
 	sprite->setTexture(texture);
