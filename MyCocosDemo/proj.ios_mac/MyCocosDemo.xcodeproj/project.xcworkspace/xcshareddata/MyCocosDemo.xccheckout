@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>060AC7C5-D5B9-429F-B567-C4DC5C7E4B0C</string>
+	<string>C88D0C1D-4CB3-426B-BB20-AD60CBDD73E7</string>
 	<key>IDESourceControlProjectName</key>
 	<string>MyCocosDemo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>B23CAC6F-D026-45F3-BF41-E0A0CDFAFAC6</key>
-		<string>https://github.com/shysean/Cocos2DxDemo.git</string>
+		<key>12A86C7C-FF20-48FE-B067-2396D58EE59A</key>
+		<string>https://github.com/shysean/Cocos2dxDemo.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>MyCocosDemo/proj.ios_mac/MyCocosDemo.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>B23CAC6F-D026-45F3-BF41-E0A0CDFAFAC6</key>
+		<key>12A86C7C-FF20-48FE-B067-2396D58EE59A</key>
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/shysean/Cocos2DxDemo.git</string>
+	<string>https://github.com/shysean/Cocos2dxDemo.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>B23CAC6F-D026-45F3-BF41-E0A0CDFAFAC6</string>
+	<string>12A86C7C-FF20-48FE-B067-2396D58EE59A</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>B23CAC6F-D026-45F3-BF41-E0A0CDFAFAC6</string>
+			<string>12A86C7C-FF20-48FE-B067-2396D58EE59A</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Cocos2DxDemo</string>
 		</dict>

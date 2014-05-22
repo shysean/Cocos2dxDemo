@@ -14,6 +14,7 @@
 #include "TestCase/ParticleTest.h"
 #include "TestCase/ResourceTest.h"
 #include "TestCase/XdeltaTest.h"
+#include "TestCase/TiledTest.h"
 
 
 Controller g_aTestNames[] = {
@@ -22,7 +23,9 @@ Controller g_aTestNames[] = {
     CREATE_TEST_SCENE("ScreenTest", ScreenTest)
     CREATE_TEST_SCENE("GUITest", GUITest)
     CREATE_TEST_SCENE("ParticleTest", ParticleTest)
+    CREATE_TEST_SCENE("ResourceTest", ResourceTest)
     CREATE_TEST_SCENE("XdeltaTest", XdeltaTest)
+    CREATE_TEST_SCENE("TiledTest", TiledTest)
 
 };
 

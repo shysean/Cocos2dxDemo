@@ -27,6 +27,10 @@
 		14772C60191682C400A3F416 /* text in Resources */ = {isa = PBXBuildFile; fileRef = 14772C5E191682C400A3F416 /* text */; };
 		14772C8F1916A3D000A3F416 /* GameText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14772C8D1916A3D000A3F416 /* GameText.cpp */; };
 		14772C901916A3D000A3F416 /* GameText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14772C8D1916A3D000A3F416 /* GameText.cpp */; };
+		14A8D76D192DD13B004867B0 /* TiledTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14A8D76B192DD13A004867B0 /* TiledTest.cpp */; };
+		14A8D76E192DD13B004867B0 /* TiledTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14A8D76B192DD13A004867B0 /* TiledTest.cpp */; };
+		14A8D770192DD20A004867B0 /* tiled in Resources */ = {isa = PBXBuildFile; fileRef = 14A8D76F192DD20A004867B0 /* tiled */; };
+		14A8D771192DD20A004867B0 /* tiled in Resources */ = {isa = PBXBuildFile; fileRef = 14A8D76F192DD20A004867B0 /* tiled */; };
 		14AACF98191A5057001DE502 /* TestCaseScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14AACF96191A5057001DE502 /* TestCaseScene.cpp */; };
 		14AACFA4191A50A6001DE502 /* TextTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14AACFA2191A50A6001DE502 /* TextTest.cpp */; };
 		14AACFA5191A50A6001DE502 /* TextTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14AACFA2191A50A6001DE502 /* TextTest.cpp */; };
@@ -273,6 +277,9 @@
 		14772C5E191682C400A3F416 /* text */ = {isa = PBXFileReference; lastKnownFileType = folder; path = text; sourceTree = "<group>"; };
 		14772C8D1916A3D000A3F416 /* GameText.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameText.cpp; sourceTree = "<group>"; };
 		14772C8E1916A3D000A3F416 /* GameText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameText.h; sourceTree = "<group>"; };
+		14A8D76B192DD13A004867B0 /* TiledTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TiledTest.cpp; sourceTree = "<group>"; };
+		14A8D76C192DD13A004867B0 /* TiledTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiledTest.h; sourceTree = "<group>"; };
+		14A8D76F192DD20A004867B0 /* tiled */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tiled; sourceTree = "<group>"; };
 		14AACF96191A5057001DE502 /* TestCaseScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestCaseScene.cpp; sourceTree = "<group>"; };
 		14AACF97191A5057001DE502 /* TestCaseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCaseScene.h; sourceTree = "<group>"; };
 		14AACFA2191A50A6001DE502 /* TextTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextTest.cpp; sourceTree = "<group>"; };
@@ -432,13 +439,13 @@
 			name = ParticleTest;
 			sourceTree = "<group>";
 		};
-		14329A571927872200966188 /* Xdelta */ = {
+		14329A571927872200966188 /* XdeltaTest */ = {
 			isa = PBXGroup;
 			children = (
 				14329A5C1927874300966188 /* XdeltaTest.cpp */,
 				14329A5D1927874300966188 /* XdeltaTest.h */,
 			);
-			name = Xdelta;
+			name = XdeltaTest;
 			sourceTree = "<group>";
 		};
 		144381C61920D92300F394E1 /* GUITest */ = {
@@ -475,6 +482,15 @@
 				14F7EB6C1924822800BAE980 /* FileUtil.h */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		14A8D76A192DD12D004867B0 /* TiledTest */ = {
+			isa = PBXGroup;
+			children = (
+				14A8D76B192DD13A004867B0 /* TiledTest.cpp */,
+				14A8D76C192DD13A004867B0 /* TiledTest.h */,
+			);
+			name = TiledTest;
 			sourceTree = "<group>";
 		};
 		14AACFA1191A5097001DE502 /* TextTest */ = {
@@ -543,7 +559,8 @@
 		14F8725E190FE67A0001C020 /* TestCase */ = {
 			isa = PBXGroup;
 			children = (
-				14329A571927872200966188 /* Xdelta */,
+				14A8D76A192DD12D004867B0 /* TiledTest */,
+				14329A571927872200966188 /* XdeltaTest */,
 				144381D71922691B00F394E1 /* ResourcesTest */,
 				144381C61920D92300F394E1 /* GUITest */,
 				1419E4A4191F8FCF0066BC28 /* ParticleTest */,
@@ -666,6 +683,7 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				14A8D76F192DD20A004867B0 /* tiled */,
 				14F7EB5C1923CA2800BAE980 /* png.bin */,
 				14F7EB5D1923CA2800BAE980 /* png.idx */,
 				14F7EB591923AD0300BAE980 /* texturePacker */,
@@ -851,6 +869,7 @@
 				14F7EB601923CA2800BAE980 /* png.idx in Resources */,
 				50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */,
 				1AFAF8BC16D35E4900DB1158 /* CloseNormal.png in Resources */,
+				14A8D770192DD20A004867B0 /* tiled in Resources */,
 				5087E78317EB970100C73F5D /* Icon-152.png in Resources */,
 				1419E4AA191F9E5F0066BC28 /* particle in Resources */,
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
@@ -881,6 +900,7 @@
 				1419E49A191E484C0066BC28 /* image in Resources */,
 				5087E75317EB910900C73F5D /* CloseNormal.png in Resources */,
 				14F7EB5B1923AD0300BAE980 /* texturePacker in Resources */,
+				14A8D771192DD20A004867B0 /* tiled in Resources */,
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
 				5087E75417EB910900C73F5D /* CloseSelected.png in Resources */,
 				5087E75517EB910900C73F5D /* HelloWorld.png in Resources */,
@@ -915,6 +935,7 @@
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				14AEA95E191E296B00EE332E /* GUITest.cpp in Sources */,
+				14A8D76D192DD13B004867B0 /* TiledTest.cpp in Sources */,
 				144381D31922691800F394E1 /* ResourceTest.cpp in Sources */,
 				14AEA95A191D226800EE332E /* SocketTest.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
@@ -931,6 +952,7 @@
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
 				1419E4A8191F8FE10066BC28 /* ParticleTest.cpp in Sources */,
 				144381D41922691800F394E1 /* ResourceTest.cpp in Sources */,
+				14A8D76E192DD13B004867B0 /* TiledTest.cpp in Sources */,
 				14AEA953191D1FDC00EE332E /* ScreenTest.cpp in Sources */,
 				14AEA95B191D226800EE332E /* SocketTest.cpp in Sources */,
 				14F7EB661923D9D200BAE980 /* StringUtil.cpp in Sources */,
