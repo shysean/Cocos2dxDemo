@@ -15,6 +15,7 @@
 #include "TestCase/ResourceTest.h"
 #include "TestCase/XdeltaTest.h"
 #include "TestCase/TiledTest.h"
+#include "TestCase/AniTest.h"
 
 
 Controller g_aTestNames[] = {
@@ -26,6 +27,7 @@ Controller g_aTestNames[] = {
     CREATE_TEST_SCENE("ResourceTest", ResourceTest)
     CREATE_TEST_SCENE("XdeltaTest", XdeltaTest)
     CREATE_TEST_SCENE("TiledTest", TiledTest)
+    CREATE_TEST_SCENE("AniTest", AniTest)
 
 };
 

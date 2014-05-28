@@ -21,9 +21,10 @@ void ParticleTest::runThisTest()
     m_particleLayer = Layer::create();
     addChild(m_particleLayer);
     
-    auto dispatcher = Director::getInstance()->getEventDispatcher();
     
     // Add Touch Listener
+    auto dispatcher = Director::getInstance()->getEventDispatcher();
+    
     auto touchListener = EventListenerTouchOneByOne::create();
     touchListener->onTouchBegan = [=](Touch* touch, Event* event){
         

@@ -85,7 +85,8 @@ void TiledTest::testTiled()
 {
     setInfo("testTiled");
     
-    auto map = TMXTiledMap::create("tiled/testMap.tmx");
+//    auto map = TMXTiledMap::create("tiled/testMap.tmx");
+    auto map = TMXTiledMap::create("tiled/map1.tmx");
     addChild(map, 0, TAG_MAP);
 }
 

@@ -4,11 +4,17 @@
     <Filter Include="win32">
       <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Classes">
-      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
-    </Filter>
     <Filter Include="resource">
       <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{32429502-0446-47eb-9dce-a01db2d0a1b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Tools">
+      <UniqueIdentifier>{31e76408-0890-4a0b-a1dd-fb6634c018b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\TestCase">
+      <UniqueIdentifier>{cfc38154-c2ca-4e95-b564-0027ed114e26}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -18,8 +24,56 @@
     <ClCompile Include="..\Classes\AppDelegate.cpp">
       <Filter>Classes</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+    <ClCompile Include="..\Classes\TestCaseScene.cpp">
       <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Tools\FileUtil.cpp">
+      <Filter>Classes\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Tools\GameText.cpp">
+      <Filter>Classes\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Tools\StringUtil.cpp">
+      <Filter>Classes\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Tools\TimeUtil.cpp">
+      <Filter>Classes\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Tools\UIUtil.cpp">
+      <Filter>Classes\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TestCase\ActionTest.cpp">
+      <Filter>Classes\TestCase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TestCase\AniTest.cpp">
+      <Filter>Classes\TestCase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TestCase\BaseTestScene.cpp">
+      <Filter>Classes\TestCase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TestCase\GUITest.cpp">
+      <Filter>Classes\TestCase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TestCase\ParticleTest.cpp">
+      <Filter>Classes\TestCase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TestCase\ResourceTest.cpp">
+      <Filter>Classes\TestCase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TestCase\ScreenTest.cpp">
+      <Filter>Classes\TestCase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TestCase\SocketTest.cpp">
+      <Filter>Classes\TestCase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TestCase\TextTest.cpp">
+      <Filter>Classes\TestCase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TestCase\TiledTest.cpp">
+      <Filter>Classes\TestCase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TestCase\XdeltaTest.cpp">
+      <Filter>Classes\TestCase</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -29,8 +83,56 @@
     <ClInclude Include="..\Classes\AppDelegate.h">
       <Filter>Classes</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\HelloWorldScene.h">
+    <ClInclude Include="..\Classes\TestCaseScene.h">
       <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Tools\FileUtil.h">
+      <Filter>Classes\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Tools\GameText.h">
+      <Filter>Classes\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Tools\StringUtil.h">
+      <Filter>Classes\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Tools\TimeUtil.h">
+      <Filter>Classes\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Tools\UIUtil.h">
+      <Filter>Classes\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TestCase\ActionTest.h">
+      <Filter>Classes\TestCase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TestCase\AniTest.h">
+      <Filter>Classes\TestCase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TestCase\BaseTestScene.h">
+      <Filter>Classes\TestCase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TestCase\GUITest.h">
+      <Filter>Classes\TestCase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TestCase\ParticleTest.h">
+      <Filter>Classes\TestCase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TestCase\ResourceTest.h">
+      <Filter>Classes\TestCase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TestCase\ScreenTest.h">
+      <Filter>Classes\TestCase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TestCase\SocketTest.h">
+      <Filter>Classes\TestCase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TestCase\TextTest.h">
+      <Filter>Classes\TestCase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TestCase\TiledTest.h">
+      <Filter>Classes\TestCase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TestCase\XdeltaTest.h">
+      <Filter>Classes\TestCase</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

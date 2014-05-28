@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="15" height="21" tilewidth="62" tileheight="62">
+ <tileset firstgid="1" name="17" tilewidth="62" tileheight="62">
+  <image source="../../../../../workspace/work/res/image/17.png" trans="ffffff" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="5" name="858_04" tilewidth="62" tileheight="62">
+  <image source="../../../../../workspace/work/res/image/858_04.png" trans="ffffff" width="253" height="239"/>
+ </tileset>
+ <tileset firstgid="17" name="820" tilewidth="62" tileheight="62">
+  <image source="../../../../../workspace/work/res/image/820.png" trans="ffffff" width="128" height="197"/>
+ </tileset>
+ <tileset firstgid="23" name="687" tilewidth="62" tileheight="62">
+  <image source="../../../../../workspace/work/res/image/687.png" trans="ffffff" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="39" name="864_02" tilewidth="62" tileheight="62">
+  <image source="../../../../../workspace/work/res/image/864_02.png" trans="ffffff" width="256" height="247"/>
+ </tileset>
+ <layer name="块层 1" width="15" height="21">
+  <data encoding="base64" compression="zlib">
+   eJyl0E0LwjAMBuBWd2oO4qYDwYGHgm5++/9/3N5DBiWktsbDQ2AjeZN659wKvFIjO8GRDewAa2gKdZmR9g5K3hkuMMKUfNf6Zc4VbnCHRyFf5j7hBW/4KP9jouZercbM+9bUf3MDkDGXmCWfjPd63tlyr5YbhG+5JOaRUMrNqckNmb5c3hZa2Bjet4Od8X330Cfzlj1+yW95nmWPnufIPWrqDNxICn4=
+  </data>
+ </layer>
+ <objectgroup name="blockLayer" width="15" height="21">
+  <object x="125" y="1119" width="122" height="183">
+   <properties>
+    <property name="canMove" value="false"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

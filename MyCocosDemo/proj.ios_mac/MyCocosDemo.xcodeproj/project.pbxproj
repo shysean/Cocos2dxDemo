@@ -21,6 +21,10 @@
 		141E91BB192E366000E61636 /* ActionTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 141E91B8192E366000E61636 /* ActionTest.cpp */; };
 		14329A5E1927874300966188 /* XdeltaTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14329A5C1927874300966188 /* XdeltaTest.cpp */; };
 		14329A5F1927874300966188 /* XdeltaTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14329A5C1927874300966188 /* XdeltaTest.cpp */; };
+		14373E5B1934672700995FE9 /* AniTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14373E591934672700995FE9 /* AniTest.cpp */; };
+		14373E5C1934672700995FE9 /* AniTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14373E591934672700995FE9 /* AniTest.cpp */; };
+		14373E5E1934687500995FE9 /* HeroAni in Resources */ = {isa = PBXBuildFile; fileRef = 14373E5D1934687500995FE9 /* HeroAni */; };
+		14373E5F1934687500995FE9 /* HeroAni in Resources */ = {isa = PBXBuildFile; fileRef = 14373E5D1934687500995FE9 /* HeroAni */; };
 		144381CB1920DD7900F394E1 /* TimeUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 144381C91920DD7900F394E1 /* TimeUtil.cpp */; };
 		144381CC1920DD7900F394E1 /* TimeUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 144381C91920DD7900F394E1 /* TimeUtil.cpp */; };
 		144381D31922691800F394E1 /* ResourceTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 144381D11922691800F394E1 /* ResourceTest.cpp */; };
@@ -274,6 +278,9 @@
 		141E91B9192E366000E61636 /* ActionTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionTest.h; sourceTree = "<group>"; };
 		14329A5C1927874300966188 /* XdeltaTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XdeltaTest.cpp; sourceTree = "<group>"; };
 		14329A5D1927874300966188 /* XdeltaTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XdeltaTest.h; sourceTree = "<group>"; };
+		14373E591934672700995FE9 /* AniTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AniTest.cpp; sourceTree = "<group>"; };
+		14373E5A1934672700995FE9 /* AniTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AniTest.h; sourceTree = "<group>"; };
+		14373E5D1934687500995FE9 /* HeroAni */ = {isa = PBXFileReference; lastKnownFileType = folder; path = HeroAni; sourceTree = "<group>"; };
 		144381C91920DD7900F394E1 /* TimeUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TimeUtil.cpp; sourceTree = "<group>"; };
 		144381CA1920DD7900F394E1 /* TimeUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeUtil.h; sourceTree = "<group>"; };
 		144381D11922691800F394E1 /* ResourceTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ResourceTest.cpp; sourceTree = "<group>"; };
@@ -461,6 +468,15 @@
 			name = XdeltaTest;
 			sourceTree = "<group>";
 		};
+		14373E561934671900995FE9 /* AniTest */ = {
+			isa = PBXGroup;
+			children = (
+				14373E591934672700995FE9 /* AniTest.cpp */,
+				14373E5A1934672700995FE9 /* AniTest.h */,
+			);
+			name = AniTest;
+			sourceTree = "<group>";
+		};
 		144381C61920D92300F394E1 /* GUITest */ = {
 			isa = PBXGroup;
 			children = (
@@ -572,6 +588,7 @@
 		14F8725E190FE67A0001C020 /* TestCase */ = {
 			isa = PBXGroup;
 			children = (
+				14373E561934671900995FE9 /* AniTest */,
 				141E91B5192E363700E61636 /* ActionTest */,
 				14A8D76A192DD12D004867B0 /* TiledTest */,
 				14329A571927872200966188 /* XdeltaTest */,
@@ -697,6 +714,7 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				14373E5D1934687500995FE9 /* HeroAni */,
 				14A8D76F192DD20A004867B0 /* tiled */,
 				14F7EB5C1923CA2800BAE980 /* png.bin */,
 				14F7EB5D1923CA2800BAE980 /* png.idx */,
@@ -898,6 +916,7 @@
 				50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */,
 				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
+				14373E5E1934687500995FE9 /* HeroAni in Resources */,
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
 				14F7EB5A1923AD0300BAE980 /* texturePacker in Resources */,
@@ -920,6 +939,7 @@
 				5087E75517EB910900C73F5D /* HelloWorld.png in Resources */,
 				1419E4AB191F9E5F0066BC28 /* particle in Resources */,
 				14772C60191682C400A3F416 /* text in Resources */,
+				14373E5F1934687500995FE9 /* HeroAni in Resources */,
 				1419E4AE191FD5F00066BC28 /* fonts in Resources */,
 				14F7EB611923CA2800BAE980 /* png.idx in Resources */,
 				14F7EB5F1923CA2800BAE980 /* png.bin in Resources */,
@@ -941,6 +961,7 @@
 				14F7EB651923D9D200BAE980 /* StringUtil.cpp in Sources */,
 				141E91BA192E366000E61636 /* ActionTest.cpp in Sources */,
 				14AEA952191D1FDC00EE332E /* ScreenTest.cpp in Sources */,
+				14373E5B1934672700995FE9 /* AniTest.cpp in Sources */,
 				14772C8F1916A3D000A3F416 /* GameText.cpp in Sources */,
 				14AACF98191A5057001DE502 /* TestCaseScene.cpp in Sources */,
 				14329A5E1927874300966188 /* XdeltaTest.cpp in Sources */,
@@ -973,6 +994,7 @@
 				14AEA95B191D226800EE332E /* SocketTest.cpp in Sources */,
 				14F7EB661923D9D200BAE980 /* StringUtil.cpp in Sources */,
 				14F7EB6E1924822800BAE980 /* FileUtil.cpp in Sources */,
+				14373E5C1934672700995FE9 /* AniTest.cpp in Sources */,
 				14772C901916A3D000A3F416 /* GameText.cpp in Sources */,
 				144381CC1920DD7900F394E1 /* TimeUtil.cpp in Sources */,
 				1419E4A0191E4A540066BC28 /* UIUtil.cpp in Sources */,
