@@ -21,15 +21,19 @@ public:
     virtual void runThisTest();
     virtual void initTestMenu();
 
+    
+    // test method
     void nextAni();
     void lastAni();
     void playAni();
     void pauseAni();
+    void changeWeapon();
 
+    // member method
+    void onDataLoaded(float percent);
     void initAni();
     void setNormal(Node* node);
     void setRun();
-    
 protected:
     cocostudio::Armature* m_armature;
     int m_aniIndex;

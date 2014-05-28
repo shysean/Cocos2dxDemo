@@ -9,7 +9,7 @@
         {
           "name": "Layer4",
           "parent": "",
-          "dI": -1,
+          "dI": 0,
           "x": 193.0,
           "y": 41.373321533203125,
           "z": 15,
@@ -371,7 +371,7 @@
         {
           "name": "Layer3",
           "parent": "",
-          "dI": 0,
+          "dI": -2,
           "x": 149.70591735839844,
           "y": 220.21963500976563,
           "z": 3,
@@ -402,7 +402,7 @@
         {
           "name": "Layer2",
           "parent": "",
-          "dI": 0,
+          "dI": -2,
           "x": 149.70591735839844,
           "y": 220.807861328125,
           "z": 2,
@@ -433,7 +433,7 @@
         {
           "name": "Layer1",
           "parent": "",
-          "dI": 0,
+          "dI": -2,
           "x": 149.70591735839844,
           "y": 220.21963500976563,
           "z": 1,
@@ -2462,7 +2462,7 @@
         },
         {
           "name": "attack",
-          "dr": 20,
+          "dr": 21,
           "lp": false,
           "to": 0,
           "drTW": 0,
@@ -5453,14 +5453,6 @@
       "plistFile": ""
     }
   ],
-  "config_file_path": [
-    "blood.plist",
-    "effect.plist",
-    "HeroAni0.plist"
-  ],
-  "config_png_path": [
-    "blood.png",
-    "effect.png",
-    "HeroAni0.png"
-  ]
+  "config_file_path": [],
+  "config_png_path": []
 }
