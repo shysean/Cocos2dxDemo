@@ -76,7 +76,7 @@ void AniTest::initAni()
                             "HeroAni/Export/HeroAni/HeroAni0.plist",
                             "HeroAni/Export/HeroAni/HeroAni.ExportJson");
     
-    // 异步加载 Crased on Android.
+    // 异步加载 Crased on Android(sometime).
 //    cocostudio::ArmatureDataManager::getInstance()->addArmatureFileInfoAsync(
 //                            "HeroAni/Export/HeroAni/HeroAni0.png",
 //                            "HeroAni/Export/HeroAni/HeroAni0.plist",
@@ -99,7 +99,9 @@ void AniTest::onDataLoaded(float percent)
     char info[100];
     sprintf(info, "%f", percent);
     CCLOG("percent = %s", info);
-    setInfo("Data Load Complate!");
+    
+    // sean:异步加载的情况第二次加载会崩溃
+//    setInfo("Data Load Complate!");
 }
 
 
@@ -142,6 +144,16 @@ void AniTest::changeWeapon()
     
     m_armature->getBone("Layer17")->addDisplay(skin, 1);
     m_armature->getBone("Layer17")->changeDisplayWithIndex(1, true);
+    
+// sean: debug bone name
+//    
+//    cocos2d::Map<std::string, cocostudio::Bone*> boneMap = m_armature->getBoneDic();
+//    
+//    for (auto map: boneMap)
+//    {
+//        CCLOG("bone=%s",map.first.c_str());
+//    }
+    
 }
 
 
