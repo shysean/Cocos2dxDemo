@@ -31,6 +31,8 @@
 		144381CC1920DD7900F394E1 /* TimeUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 144381C91920DD7900F394E1 /* TimeUtil.cpp */; };
 		144381D31922691800F394E1 /* ResourceTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 144381D11922691800F394E1 /* ResourceTest.cpp */; };
 		144381D41922691800F394E1 /* ResourceTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 144381D11922691800F394E1 /* ResourceTest.cpp */; };
+		14770B2B195AF73400127D60 /* MemoryTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14770B29195AF73400127D60 /* MemoryTest.cpp */; };
+		14770B2C195AF73400127D60 /* MemoryTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14770B29195AF73400127D60 /* MemoryTest.cpp */; };
 		14772C5F191682C400A3F416 /* text in Resources */ = {isa = PBXBuildFile; fileRef = 14772C5E191682C400A3F416 /* text */; };
 		14772C60191682C400A3F416 /* text in Resources */ = {isa = PBXBuildFile; fileRef = 14772C5E191682C400A3F416 /* text */; };
 		14772C8F1916A3D000A3F416 /* GameText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14772C8D1916A3D000A3F416 /* GameText.cpp */; };
@@ -289,6 +291,8 @@
 		144381CA1920DD7900F394E1 /* TimeUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeUtil.h; sourceTree = "<group>"; };
 		144381D11922691800F394E1 /* ResourceTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ResourceTest.cpp; sourceTree = "<group>"; };
 		144381D21922691800F394E1 /* ResourceTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceTest.h; sourceTree = "<group>"; };
+		14770B29195AF73400127D60 /* MemoryTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MemoryTest.cpp; sourceTree = "<group>"; };
+		14770B2A195AF73400127D60 /* MemoryTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryTest.h; sourceTree = "<group>"; };
 		14772C5E191682C400A3F416 /* text */ = {isa = PBXFileReference; lastKnownFileType = folder; path = text; sourceTree = "<group>"; };
 		14772C8D1916A3D000A3F416 /* GameText.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameText.cpp; sourceTree = "<group>"; };
 		14772C8E1916A3D000A3F416 /* GameText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameText.h; sourceTree = "<group>"; };
@@ -508,6 +512,15 @@
 			name = ResourcesTest;
 			sourceTree = "<group>";
 		};
+		14770B26195AF72300127D60 /* MemoryTest */ = {
+			isa = PBXGroup;
+			children = (
+				14770B29195AF73400127D60 /* MemoryTest.cpp */,
+				14770B2A195AF73400127D60 /* MemoryTest.h */,
+			);
+			name = MemoryTest;
+			sourceTree = "<group>";
+		};
 		14772C881916A32200A3F416 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -601,6 +614,7 @@
 		14F8725E190FE67A0001C020 /* TestCase */ = {
 			isa = PBXGroup;
 			children = (
+				14770B26195AF72300127D60 /* MemoryTest */,
 				14373E631935CCF800995FE9 /* DataStructure */,
 				14373E561934671900995FE9 /* AniTest */,
 				141E91B5192E363700E61636 /* ActionTest */,
@@ -967,6 +981,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14770B2B195AF73400127D60 /* MemoryTest.cpp in Sources */,
 				14F87266190FE67A0001C020 /* AppDelegate.cpp in Sources */,
 				1419E4A7191F8FDC0066BC28 /* ParticleTest.cpp in Sources */,
 				14F7EB6D1924822800BAE980 /* FileUtil.cpp in Sources */,
@@ -1017,6 +1032,7 @@
 				14AACFA6191A565D001DE502 /* TestCaseScene.cpp in Sources */,
 				14AACFA5191A50A6001DE502 /* TextTest.cpp in Sources */,
 				14F8726B190FE67A0001C020 /* BaseTestScene.cpp in Sources */,
+				14770B2C195AF73400127D60 /* MemoryTest.cpp in Sources */,
 				14AEA95F191E296B00EE332E /* GUITest.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

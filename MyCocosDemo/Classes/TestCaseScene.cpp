@@ -17,6 +17,7 @@
 #include "TestCase/TiledTest.h"
 #include "TestCase/AniTest.h"
 #include "TestCase/DataStructure.h"
+#include "TestCase/MemoryTest.h"
 
 
 Controller g_aTestNames[] = {
@@ -30,6 +31,7 @@ Controller g_aTestNames[] = {
     CREATE_TEST_SCENE("TiledTest", TiledTest)
     CREATE_TEST_SCENE("AniTest", AniTest)
     CREATE_TEST_SCENE("DataStructure", DataStructure)
+    CREATE_TEST_SCENE("MemoryTest", MemoryTest)
 
 };
 
