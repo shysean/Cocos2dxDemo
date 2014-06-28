@@ -6,18 +6,9 @@
 //
 //
 
+#include "TestCase.h"
 #include "TestCaseScene.h"
-#include "TestCase/SocketTest.h"
-#include "TestCase/TextTest.h"
-#include "TestCase/ScreenTest.h"
-#include "TestCase/GUITest.h"
-#include "TestCase/ParticleTest.h"
-#include "TestCase/ResourceTest.h"
-#include "TestCase/XdeltaTest.h"
-#include "TestCase/TiledTest.h"
-#include "TestCase/AniTest.h"
-#include "TestCase/DataStructure.h"
-#include "TestCase/MemoryTest.h"
+
 
 
 Controller g_aTestNames[] = {
@@ -32,7 +23,7 @@ Controller g_aTestNames[] = {
     CREATE_TEST_SCENE("AniTest", AniTest)
     CREATE_TEST_SCENE("DataStructure", DataStructure)
     CREATE_TEST_SCENE("MemoryTest", MemoryTest)
-
+    CREATE_TEST_SCENE("CppTest", CppTest)
 };
 
 static int g_testCount = sizeof(g_aTestNames) / sizeof(g_aTestNames[0]);

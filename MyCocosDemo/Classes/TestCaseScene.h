@@ -10,13 +10,14 @@
 #define __Cocos2dxDemo__TestCaseScene__
 
 #include "cocos2d.h"
+#include "TestCase.h"
 
 USING_NS_CC;
 
+#define LINE_SPACE          60
+
 #define CREATE_TEST_SCENE(varTitle, varClassName)    \
 { varTitle, []() { return new varClassName(); } },
-
-#define LINE_SPACE          60
 
 class BaseTestScene;
 
