@@ -156,6 +156,8 @@ void MemoryTest::testCreate()
     auto testLayer = TestLayer::create();
     addChild(testLayer);
     
+    removeChild(testLayer);
+    
     // result:
     //cocos2d: TestLayer.()
     //cocos2d: TestLayer.init()
@@ -183,7 +185,7 @@ void MemoryTest::testMemory()
     //cocos2d: --- update index: 1 end   ---
     //cocos2d: TestObject.~()                   // 每帧结束时释放无用对象
     //cocos2d: --- update index: 2 start ---
-    //cocos2d: TestNode.~()                     // 每帧开始时释放管理对象
+    //cocos2d: TestNode.~()                     // removeChild立即释放管理对象
     //cocos2d: --- update index: 2 end   ---
     //cocos2d: --- update index: 3 start ---
     //cocos2d: --- update index: 3 end   ---

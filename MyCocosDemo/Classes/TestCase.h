@@ -21,6 +21,7 @@
 #include "TestCase/DataStructure.h"
 #include "TestCase/MemoryTest.h"
 #include "TestCase/CppTest.h"
+#include "TestCase/ScrollBackgroundTest.h"
 
 
 

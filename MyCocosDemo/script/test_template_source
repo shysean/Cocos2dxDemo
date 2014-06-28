@@ -29,5 +29,5 @@ void #CLASSNAME#::initTestMenu()
 // =============================
 void #CLASSNAME#::testFunction()
 {
-//    setInfo(“testFunction");
+//    setInfo("testFunction");
 }

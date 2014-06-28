@@ -39,6 +39,8 @@
 		14772C901916A3D000A3F416 /* GameText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14772C8D1916A3D000A3F416 /* GameText.cpp */; };
 		14A70B86195E60840034F020 /* CppTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14A70B84195E60840034F020 /* CppTest.cpp */; };
 		14A70B87195E60840034F020 /* CppTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14A70B84195E60840034F020 /* CppTest.cpp */; };
+		14A70B93195E8F7E0034F020 /* ScrollBackgroundTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14A70B91195E8F7E0034F020 /* ScrollBackgroundTest.cpp */; };
+		14A70B94195E8F7E0034F020 /* ScrollBackgroundTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14A70B91195E8F7E0034F020 /* ScrollBackgroundTest.cpp */; };
 		14A8D76D192DD13B004867B0 /* TiledTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14A8D76B192DD13A004867B0 /* TiledTest.cpp */; };
 		14A8D76E192DD13B004867B0 /* TiledTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14A8D76B192DD13A004867B0 /* TiledTest.cpp */; };
 		14A8D770192DD20A004867B0 /* tiled in Resources */ = {isa = PBXBuildFile; fileRef = 14A8D76F192DD20A004867B0 /* tiled */; };
@@ -301,6 +303,8 @@
 		14A70B80195E5BAD0034F020 /* TestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCase.h; sourceTree = "<group>"; };
 		14A70B84195E60840034F020 /* CppTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CppTest.cpp; sourceTree = "<group>"; };
 		14A70B85195E60840034F020 /* CppTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CppTest.h; sourceTree = "<group>"; };
+		14A70B91195E8F7E0034F020 /* ScrollBackgroundTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScrollBackgroundTest.cpp; sourceTree = "<group>"; };
+		14A70B92195E8F7E0034F020 /* ScrollBackgroundTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollBackgroundTest.h; sourceTree = "<group>"; };
 		14A8D76B192DD13A004867B0 /* TiledTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TiledTest.cpp; sourceTree = "<group>"; };
 		14A8D76C192DD13A004867B0 /* TiledTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiledTest.h; sourceTree = "<group>"; };
 		14A8D76F192DD20A004867B0 /* tiled */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tiled; sourceTree = "<group>"; };
@@ -553,6 +557,15 @@
 			name = CppTest;
 			sourceTree = "<group>";
 		};
+		14A70B90195E8F640034F020 /* ScrollBackgroundTest */ = {
+			isa = PBXGroup;
+			children = (
+				14A70B91195E8F7E0034F020 /* ScrollBackgroundTest.cpp */,
+				14A70B92195E8F7E0034F020 /* ScrollBackgroundTest.h */,
+			);
+			name = ScrollBackgroundTest;
+			sourceTree = "<group>";
+		};
 		14A8D76A192DD12D004867B0 /* TiledTest */ = {
 			isa = PBXGroup;
 			children = (
@@ -629,6 +642,7 @@
 		14F8725E190FE67A0001C020 /* TestCase */ = {
 			isa = PBXGroup;
 			children = (
+				14A70B90195E8F640034F020 /* ScrollBackgroundTest */,
 				14A70B83195E60780034F020 /* CppTest */,
 				14770B26195AF72300127D60 /* MemoryTest */,
 				14373E631935CCF800995FE9 /* DataStructure */,
@@ -1001,6 +1015,7 @@
 				14F87266190FE67A0001C020 /* AppDelegate.cpp in Sources */,
 				1419E4A7191F8FDC0066BC28 /* ParticleTest.cpp in Sources */,
 				14F7EB6D1924822800BAE980 /* FileUtil.cpp in Sources */,
+				14A70B93195E8F7E0034F020 /* ScrollBackgroundTest.cpp in Sources */,
 				1419E49F191E4A540066BC28 /* UIUtil.cpp in Sources */,
 				14F8726A190FE67A0001C020 /* BaseTestScene.cpp in Sources */,
 				14F7EB651923D9D200BAE980 /* StringUtil.cpp in Sources */,
@@ -1037,6 +1052,7 @@
 				141E91BB192E366000E61636 /* ActionTest.cpp in Sources */,
 				1419E4A8191F8FE10066BC28 /* ParticleTest.cpp in Sources */,
 				144381D41922691800F394E1 /* ResourceTest.cpp in Sources */,
+				14A70B94195E8F7E0034F020 /* ScrollBackgroundTest.cpp in Sources */,
 				14A8D76E192DD13B004867B0 /* TiledTest.cpp in Sources */,
 				14AEA953191D1FDC00EE332E /* ScreenTest.cpp in Sources */,
 				14AEA95B191D226800EE332E /* SocketTest.cpp in Sources */,

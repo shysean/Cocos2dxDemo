@@ -50,12 +50,23 @@ public:
     {
         CCLOG("TestNode.~()");
     };
-    virtual bool init()
+    virtual bool init() override
     {
         CCLOG("TestNode.init()");
         return true;
     };
     
+    virtual void onEnter() override
+    {
+        Node::onEnter();
+        CCLOG("TestNode.onEnter()");
+    }
+    
+    virtual void onExit() override
+    {
+        Node::onExit();
+        CCLOG("TestNode.onExit()");
+    }
     CREATE_FUNC(TestNode);
 };
 
@@ -78,9 +89,10 @@ public:
         CCLOG("TestLayer.init()");
         
         TestNode* node = TestNode::create();
+        addChild(node);
+
         /*TestObject* object = */TestObject::create();
         
-        addChild(node);
         return true;
     };
     
