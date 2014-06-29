@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14009480196011F200FCD4F3 /* AStarTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1400947E196011F200FCD4F3 /* AStarTest.cpp */; };
+		14009481196011F200FCD4F3 /* AStarTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1400947E196011F200FCD4F3 /* AStarTest.cpp */; };
+		140094841960157D00FCD4F3 /* GLDrawer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 140094821960157D00FCD4F3 /* GLDrawer.cpp */; };
+		140094851960157D00FCD4F3 /* GLDrawer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 140094821960157D00FCD4F3 /* GLDrawer.cpp */; };
 		1419E499191E484C0066BC28 /* image in Resources */ = {isa = PBXBuildFile; fileRef = 1419E498191E484C0066BC28 /* image */; };
 		1419E49A191E484C0066BC28 /* image in Resources */ = {isa = PBXBuildFile; fileRef = 1419E498191E484C0066BC28 /* image */; };
 		1419E49F191E4A540066BC28 /* UIUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1419E49D191E4A540066BC28 /* UIUtil.cpp */; };
@@ -275,6 +279,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1400947E196011F200FCD4F3 /* AStarTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AStarTest.cpp; sourceTree = "<group>"; };
+		1400947F196011F200FCD4F3 /* AStarTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AStarTest.h; sourceTree = "<group>"; };
+		140094821960157D00FCD4F3 /* GLDrawer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLDrawer.cpp; sourceTree = "<group>"; };
+		140094831960157D00FCD4F3 /* GLDrawer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLDrawer.h; sourceTree = "<group>"; };
 		1419E498191E484C0066BC28 /* image */ = {isa = PBXFileReference; lastKnownFileType = folder; path = image; sourceTree = "<group>"; };
 		1419E49D191E4A540066BC28 /* UIUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIUtil.cpp; sourceTree = "<group>"; };
 		1419E49E191E4A540066BC28 /* UIUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIUtil.h; sourceTree = "<group>"; };
@@ -458,6 +466,15 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		1400947B196011E000FCD4F3 /* AStarTest */ = {
+			isa = PBXGroup;
+			children = (
+				1400947E196011F200FCD4F3 /* AStarTest.cpp */,
+				1400947F196011F200FCD4F3 /* AStarTest.h */,
+			);
+			name = AStarTest;
+			sourceTree = "<group>";
+		};
 		1419E4A4191F8FCF0066BC28 /* ParticleTest */ = {
 			isa = PBXGroup;
 			children = (
@@ -544,6 +561,8 @@
 				14F7EB641923D9D200BAE980 /* StringUtil.h */,
 				14F7EB6B1924822800BAE980 /* FileUtil.cpp */,
 				14F7EB6C1924822800BAE980 /* FileUtil.h */,
+				140094821960157D00FCD4F3 /* GLDrawer.cpp */,
+				140094831960157D00FCD4F3 /* GLDrawer.h */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -642,6 +661,7 @@
 		14F8725E190FE67A0001C020 /* TestCase */ = {
 			isa = PBXGroup;
 			children = (
+				1400947B196011E000FCD4F3 /* AStarTest */,
 				14A70B90195E8F640034F020 /* ScrollBackgroundTest */,
 				14A70B83195E60780034F020 /* CppTest */,
 				14770B26195AF72300127D60 /* MemoryTest */,
@@ -1012,6 +1032,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14770B2B195AF73400127D60 /* MemoryTest.cpp in Sources */,
+				140094841960157D00FCD4F3 /* GLDrawer.cpp in Sources */,
 				14F87266190FE67A0001C020 /* AppDelegate.cpp in Sources */,
 				1419E4A7191F8FDC0066BC28 /* ParticleTest.cpp in Sources */,
 				14F7EB6D1924822800BAE980 /* FileUtil.cpp in Sources */,
@@ -1031,6 +1052,7 @@
 				14BA2A251927CC9A008AD0D8 /* xdelta3.c in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
+				14009480196011F200FCD4F3 /* AStarTest.cpp in Sources */,
 				14AEA95E191E296B00EE332E /* GUITest.cpp in Sources */,
 				14A8D76D192DD13B004867B0 /* TiledTest.cpp in Sources */,
 				14373E681935CD0E00995FE9 /* DataStructure.cpp in Sources */,
@@ -1059,11 +1081,13 @@
 				14373E691935CD0E00995FE9 /* DataStructure.cpp in Sources */,
 				14F7EB661923D9D200BAE980 /* StringUtil.cpp in Sources */,
 				14F7EB6E1924822800BAE980 /* FileUtil.cpp in Sources */,
+				14009481196011F200FCD4F3 /* AStarTest.cpp in Sources */,
 				14373E5C1934672700995FE9 /* AniTest.cpp in Sources */,
 				14772C901916A3D000A3F416 /* GameText.cpp in Sources */,
 				144381CC1920DD7900F394E1 /* TimeUtil.cpp in Sources */,
 				1419E4A0191E4A540066BC28 /* UIUtil.cpp in Sources */,
 				14AACFA6191A565D001DE502 /* TestCaseScene.cpp in Sources */,
+				140094851960157D00FCD4F3 /* GLDrawer.cpp in Sources */,
 				14AACFA5191A50A6001DE502 /* TextTest.cpp in Sources */,
 				14F8726B190FE67A0001C020 /* BaseTestScene.cpp in Sources */,
 				14770B2C195AF73400127D60 /* MemoryTest.cpp in Sources */,

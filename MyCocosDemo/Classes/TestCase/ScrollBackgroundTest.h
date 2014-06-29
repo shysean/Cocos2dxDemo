@@ -10,7 +10,7 @@
 #define __MyCocosDemo__ScrollBackgroundTest__
 
 #include "BaseTestScene.h"
-#include "cocos-ext.h"
+#include "extensions/cocos-ext.h"
 
 USING_NS_CC_EXT;
 

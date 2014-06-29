@@ -22,6 +22,7 @@
 #include "TestCase/MemoryTest.h"
 #include "TestCase/CppTest.h"
 #include "TestCase/ScrollBackgroundTest.h"
+#include "TestCase/AStarTest.h"
 
 
 

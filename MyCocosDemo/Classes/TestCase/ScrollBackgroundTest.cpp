@@ -32,9 +32,9 @@ void ScrollBackgroundTest::initScene()
 {
     Size contentSize = Director::getInstance()->getWinSize();
     
-    Rect rect;
-    rect.setRect(0, 0, contentSize.width, contentSize.height);
 //    #1 使用Sprite
+//    Rect rect;
+//    rect.setRect(0, 0, contentSize.width, contentSize.height);
 //    auto bg1 = Sprite::create("HelloWorld.png", rect);
     
 //    #2 使用Scale9Sprite

@@ -25,6 +25,7 @@ Controller g_aTestNames[] = {
     CREATE_TEST_SCENE("MemoryTest", MemoryTest)
     CREATE_TEST_SCENE("CppTest", CppTest)
     CREATE_TEST_SCENE("ScrollBackgroundTest", ScrollBackgroundTest)
+    CREATE_TEST_SCENE("AStarTest", AStarTest)
 };
 
 static int g_testCount = sizeof(g_aTestNames) / sizeof(g_aTestNames[0]);

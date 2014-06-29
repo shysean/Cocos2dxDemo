@@ -20,6 +20,7 @@ public:
     virtual void initTestMenu();
 
     void testDestructor();
+    void testDoubleDimensionalArray();
 
 };
 
@@ -43,6 +44,10 @@ public:
 //
     virtual ~CppTestBase(){ CCLOG("CppTestBase.~()"); };
     
+// - 没有virtual时：
+//    CppTestBase *c = new CppTestDerived();
+//    c->doSomething();
+//    执行基类方法，不会执行派生类方法。
     virtual void doSomething() { CCLOG("CppTestBase do something."); };
 };
 
