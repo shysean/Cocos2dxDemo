@@ -11,6 +11,8 @@
 		14009481196011F200FCD4F3 /* AStarTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1400947E196011F200FCD4F3 /* AStarTest.cpp */; };
 		140094841960157D00FCD4F3 /* GLDrawer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 140094821960157D00FCD4F3 /* GLDrawer.cpp */; };
 		140094851960157D00FCD4F3 /* GLDrawer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 140094821960157D00FCD4F3 /* GLDrawer.cpp */; };
+		140094881961562C00FCD4F3 /* AStar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 140094861961562C00FCD4F3 /* AStar.cpp */; };
+		140094891961562C00FCD4F3 /* AStar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 140094861961562C00FCD4F3 /* AStar.cpp */; };
 		1419E499191E484C0066BC28 /* image in Resources */ = {isa = PBXBuildFile; fileRef = 1419E498191E484C0066BC28 /* image */; };
 		1419E49A191E484C0066BC28 /* image in Resources */ = {isa = PBXBuildFile; fileRef = 1419E498191E484C0066BC28 /* image */; };
 		1419E49F191E4A540066BC28 /* UIUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1419E49D191E4A540066BC28 /* UIUtil.cpp */; };
@@ -283,6 +285,8 @@
 		1400947F196011F200FCD4F3 /* AStarTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AStarTest.h; sourceTree = "<group>"; };
 		140094821960157D00FCD4F3 /* GLDrawer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLDrawer.cpp; sourceTree = "<group>"; };
 		140094831960157D00FCD4F3 /* GLDrawer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLDrawer.h; sourceTree = "<group>"; };
+		140094861961562C00FCD4F3 /* AStar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AStar.cpp; sourceTree = "<group>"; };
+		140094871961562C00FCD4F3 /* AStar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AStar.h; sourceTree = "<group>"; };
 		1419E498191E484C0066BC28 /* image */ = {isa = PBXFileReference; lastKnownFileType = folder; path = image; sourceTree = "<group>"; };
 		1419E49D191E4A540066BC28 /* UIUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIUtil.cpp; sourceTree = "<group>"; };
 		1419E49E191E4A540066BC28 /* UIUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIUtil.h; sourceTree = "<group>"; };
@@ -471,6 +475,8 @@
 			children = (
 				1400947E196011F200FCD4F3 /* AStarTest.cpp */,
 				1400947F196011F200FCD4F3 /* AStarTest.h */,
+				140094861961562C00FCD4F3 /* AStar.cpp */,
+				140094871961562C00FCD4F3 /* AStar.h */,
 			);
 			name = AStarTest;
 			sourceTree = "<group>";
@@ -1050,6 +1056,7 @@
 				14AACFA4191A50A6001DE502 /* TextTest.cpp in Sources */,
 				144381CB1920DD7900F394E1 /* TimeUtil.cpp in Sources */,
 				14BA2A251927CC9A008AD0D8 /* xdelta3.c in Sources */,
+				140094881961562C00FCD4F3 /* AStar.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				14009480196011F200FCD4F3 /* AStarTest.cpp in Sources */,
@@ -1075,6 +1082,7 @@
 				1419E4A8191F8FE10066BC28 /* ParticleTest.cpp in Sources */,
 				144381D41922691800F394E1 /* ResourceTest.cpp in Sources */,
 				14A70B94195E8F7E0034F020 /* ScrollBackgroundTest.cpp in Sources */,
+				140094891961562C00FCD4F3 /* AStar.cpp in Sources */,
 				14A8D76E192DD13B004867B0 /* TiledTest.cpp in Sources */,
 				14AEA953191D1FDC00EE332E /* ScreenTest.cpp in Sources */,
 				14AEA95B191D226800EE332E /* SocketTest.cpp in Sources */,
