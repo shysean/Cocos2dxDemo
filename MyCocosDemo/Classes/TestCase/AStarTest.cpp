@@ -97,16 +97,18 @@ bool GridLayer::onTouchBegan(Touch* touch, Event* event)
     
     int gridSize = 100;
     
-    int col = (x - offsetX) / gridSize;
-    int row = (y - offsetY) / gridSize;
+    int gx = (x - offsetX) / gridSize;
+    int gy = (y - offsetY) / gridSize;
     
-    if (m_data[row][col] == -1) {
-        m_data[row][col] = 0;
+    if (m_data[gy][gx] == -1) {
+        m_data[gy][gx] = 0;
     }
     else
     {
-        m_data[row][col] = -1;
+        m_data[gy][gx] = -1;
     }
+    
+    infoMap();
 
     return true;
 }
@@ -219,7 +221,7 @@ void GridLayer::testAstar()
     
     for (auto step : moveList)
     {
-        m_data[step->gx][step->gy] = 1;
+        m_data[step->gy][step->gx] = 1;
     }
     
     infoMap();

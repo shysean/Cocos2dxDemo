@@ -44,7 +44,6 @@ private:
     bool checkStep(Step* step);
     Step *searchBestStep();
     void searchAroundStep(Step* step);
-    Step *rollbackParentStep();
     
 private:
     std::vector<Step*> m_openList;

@@ -59,8 +59,8 @@ std::vector<Step*> AStar::getPath(int sx, int sy, int ex, int ey)
     
     do{
         selectStep = searchBestStep();
-        CCLOG("selectStep(%d,%d) g=%d h=%d f=%d", selectStep->gx, selectStep->gy, selectStep->g, selectStep->h, selectStep->f);
-        m_data[selectStep->gx][selectStep->gy] = 0;
+//        CCLOG("selectStep(%d,%d) g=%d h=%d f=%d", selectStep->gx, selectStep->gy, selectStep->g, selectStep->h, selectStep->f);
+//        m_data[selectStep->gy][selectStep->gx] = 0;
         
         searchAroundStep(selectStep);
     }while (selectStep->gx != m_endX || selectStep->gy != m_endY);
@@ -102,14 +102,8 @@ bool AStar::checkStep(Step* step)
             return false;
         }
     }
-    
-    if (step->gx < 0 || step->gx > m_col - 1){
-        return false;
-    }
-    if (step->gy < 0 || step->gy > m_row - 1){
-        return false;
-    }
-    if (m_data[step->gx][step->gy] < 0) {
+    CCLOG("m_data[2][1]=%d", m_data[2][1]);
+    if (m_data[step->gy][step->gx] < 0) {
         return false;
     }
     return true;
@@ -169,35 +163,48 @@ Step* AStar::searchBestStep()
 // 四方向
 void AStar::searchAroundStep(Step* step)
 {
+    
+    int x = 0;
+    int y = 0;
     // 查找selectStep周边节点
     // 左
-    Step* leftStep = createStep(step->gx - 1, step->gy, step);
-    if (checkStep(leftStep)) {
-        m_openList.push_back(leftStep);
-//        m_data[leftStep->gy][leftStep->gx] = leftStep->f;
+    x = step->gx - 1;
+    y = step->gy;
+    
+    if (x >= 0 && x < m_col && y >= 0 && y < m_row) {
+        Step* leftStep = createStep(x, y, step);
+        if (checkStep(leftStep)) {
+            m_openList.push_back(leftStep);
+        }
     }
+
     // 右
-    Step* rightStep = createStep(step->gx + 1, step->gy, step);
-    if (checkStep(rightStep)) {
-        m_openList.push_back(rightStep);
-//        m_data[rightStep->gy][rightStep->gx] = rightStep->f;
+    x = step->gx + 1;
+    y = step->gy;
+    if (x >= 0 && x < m_col && y >= 0 && y < m_row) {
+        Step* rightStep = createStep(x, y, step);
+        if (checkStep(rightStep)) {
+            m_openList.push_back(rightStep);
+        }
     }
     
     // 上
-    Step* upStep = createStep(step->gx, step->gy + 1, step);
-    if (checkStep(upStep)) {
-        m_openList.push_back(upStep);
-//        m_data[upStep->gy][upStep->gx] = upStep->f;
+    x = step->gx;
+    y = step->gy + 1;
+    if (x >= 0 && x < m_col && y >= 0 && y < m_row) {
+        Step* upStep = createStep(x, y, step);
+        if (checkStep(upStep)) {
+            m_openList.push_back(upStep);
+        }
     }
     
     // 下
-    Step* downStep = createStep(step->gx, step->gy - 1, step);
-    if (checkStep(downStep)) {
-        m_openList.push_back(downStep);
-//        m_data[downStep->gy][downStep->gx] = downStep->f;
+    x = step->gx;
+    y = step->gy - 1;
+    if (x >= 0 && x < m_col && y >= 0 && y < m_row) {
+        Step* downStep = createStep(x, y, step);
+        if (checkStep(downStep)) {
+            m_openList.push_back(downStep);
+        }
     }
-}
-Step* AStar::rollbackParentStep()
-{
-    
 }
