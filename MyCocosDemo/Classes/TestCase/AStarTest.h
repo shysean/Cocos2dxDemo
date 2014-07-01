@@ -46,6 +46,7 @@ public:
     void drawGrid(int row, int col, Color4B color);
 
     void testAstar();
+    void clear();
     
     
     virtual bool onTouchBegan(Touch* touch, Event* event);
@@ -54,13 +55,17 @@ public:
     
 private:
 
-    
+    void setPoint(int x, int y, int value);
     void infoMap();
 
 private:
     int **m_data;
     int m_row;
     int m_col;
+
+    
+    bool m_isDragStartPoint;
+    bool m_isDragEndPoint;
 };
 
 

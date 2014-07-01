@@ -82,10 +82,9 @@ std::vector<Step*> AStar::getPath(int sx, int sy, int ex, int ey)
         result.push_back(parentStep);
         parentStep = parentStep->parent;
     }
+    
     return result;
 }
-
-
 
 Step* AStar::createStep(int gX, int gY, Step* parent)
 {
