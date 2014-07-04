@@ -1,0 +1,1 @@
+package com.sean.test.jni;import android.util.Log;public class JniTest {	/*	 * cocos2dx调用无返回值，无参数java方法	 */	public static void jniTest1(){		Log.d("JniTest", "JniTest::JniTest1 is called");	}}

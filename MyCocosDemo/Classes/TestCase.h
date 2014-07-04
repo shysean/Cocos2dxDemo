@@ -23,6 +23,7 @@
 #include "TestCase/CppTest.h"
 #include "TestCase/ScrollBackgroundTest.h"
 #include "TestCase/AStarTest.h"
+#include "TestCase/JniTest.h"
 
 
 
