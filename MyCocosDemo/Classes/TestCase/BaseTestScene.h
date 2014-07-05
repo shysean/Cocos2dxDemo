@@ -33,10 +33,11 @@ public:
     virtual void runThisTest() = 0;
     virtual void initTestMenu() = 0;
     
+    void setInfo(std::string info);
+
 protected:
     void resetUIPosition();
     void addTestMenuItem(cocos2d::MenuItem *menuItem);
-    void setInfo(std::string info);
     
 private:
     Vector<cocos2d::MenuItem *> m_vectorOfMenu;

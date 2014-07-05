@@ -26,6 +26,10 @@ public:
     virtual void initTestMenu();
 
     void testJniVoidFunction();
+    void startSensor();
+    void stopSensor();
+    
+    void CallStaticVoidMethod(std::string package, std::string method);
 
 };
 

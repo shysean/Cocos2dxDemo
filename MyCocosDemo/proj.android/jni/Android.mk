@@ -20,6 +20,8 @@ endef
 ALLFILES = $(call walk, $(LOCAL_PATH)/../../Classes)
 
 FILE_LIST := hellocpp/main.cpp
+FILE_LIST += hellocpp/jni_test.cpp
+
 # 从所有文件中提取出所有.cpp .c文件
 FILE_LIST += $(filter %.cpp, $(ALLFILES))
 FILE_LIST += $(filter %.c, $(ALLFILES))

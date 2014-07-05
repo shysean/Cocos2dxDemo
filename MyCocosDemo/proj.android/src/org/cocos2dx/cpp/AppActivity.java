@@ -28,5 +28,78 @@ package org.cocos2dx.cpp;
 
 import org.cocos2dx.lib.Cocos2dxActivity;
 
-public class AppActivity extends Cocos2dxActivity {
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
+import android.os.Bundle;
+
+import com.sean.test.jni.JniTest;
+
+public class AppActivity extends Cocos2dxActivity implements SensorEventListener {
+	
+	private SensorManager mSensorManager;
+	private Sensor mAccelerometer;
+	
+	private static Object activity;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		
+		this.activity = AppActivity.this;
+		
+		mSensorManager = (SensorManager)getSystemService(SENSOR_SERVICE);
+    	mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE);
+    	
+    	// wait for user order
+        mSensorManager.unregisterListener(this);
+	}
+
+	@Override
+	public void onSensorChanged(SensorEvent event) {
+        
+        if( event.sensor.getType() == Sensor.TYPE_GYROSCOPE)
+        {
+        	StringBuffer sb = new StringBuffer();
+        	sb.append("X=").append((int)(event.values[0] * 1000));
+        	sb.append(" Y=").append((int)(event.values[1] * 1000));
+        	sb.append(" Z=").append((int)(event.values[2] * 1000));
+        	
+            JniTest.setPackageName(sb.toString());
+        }
+	}
+
+	@Override
+	public void onAccuracyChanged(Sensor sensor, int accuracy) {
+		
+	}
+	
+	@Override
+	protected void onResume() {
+        super.onResume();
+        startSensor();
+	}
+
+	@Override
+    protected void onPause() {
+        super.onPause();
+        stopSensor();
+	}
+	
+	public void startSensor()
+	{
+        mSensorManager.registerListener(this, mAccelerometer, SensorManager.SENSOR_DELAY_NORMAL);
+	}
+	
+	public void stopSensor()
+	{
+        mSensorManager.unregisterListener(this);
+	}
+	
+	public static Object getActivity()
+	{
+		return activity;
+	}
+	
 }
