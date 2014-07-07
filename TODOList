@@ -3,17 +3,16 @@
 - Eclipse下的Android Debug
 - Socket实现
 - 控件Demo
-- 动画Demo
-- 分辨率适配
-- 内存管理
 - 纹理绘图资源
 - 资源管理
 - sqliteDemo
-- 字符串国际化Demo（XML读取）
-- 音乐生效Demo
-
+- 音乐声效Demo
 
 
 #DONE:
 - 分辨率Demo
 - AStar simple algorithm
+- Jni Demo
+- 动画Demo
+- 内存管理
+- 字符串国际化Demo（XML读取）
