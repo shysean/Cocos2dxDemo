@@ -21,6 +21,8 @@ public:
 
     void testTiled();
     void testMoveGird();
+    void testTgaMap();
+    void testObjectMap();
     
 private:
     std::vector<Point> m_canMovePoint;

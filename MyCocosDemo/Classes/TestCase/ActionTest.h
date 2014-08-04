@@ -18,9 +18,12 @@ public:
     
     virtual void runThisTest();
     virtual void initTestMenu();
+    virtual void update(float delta) override;
 
-    void testFunction();
+    void testRunActionInScheduler();
 
+protected:
+    cocos2d::Sprite* m_sprite;
 };
 
 #endif /* defined(__MyCocosDemo__ActionTest__) */

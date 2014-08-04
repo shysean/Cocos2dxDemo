@@ -35,6 +35,9 @@ void TiledTest::initTestMenu()
 {
     ADD_TEST_METHOD(testTiled);
     ADD_TEST_METHOD(testMoveGird);
+    ADD_TEST_METHOD(testTgaMap);
+    ADD_TEST_METHOD(testObjectMap);
+    
 }
 
 void TiledTest::onTouchesMoved(const std::vector<Touch*>& touches, Event  *event)
@@ -43,6 +46,7 @@ void TiledTest::onTouchesMoved(const std::vector<Touch*>& touches, Event  *event
     
     auto diff = touch->getDelta();
     auto node = getChildByTag(TAG_MAP);
+    
     auto currentPos = node->getPosition();
     
     Point position;
@@ -81,6 +85,42 @@ void TiledTest::onTouchesMoved(const std::vector<Touch*>& touches, Event  *event
 // =============================
 //        Test Funtion
 // =============================
+void TiledTest::testObjectMap()
+{
+    auto map = TMXTiledMap::create("tiled/map2.tmx");
+//    map->setScale(4);
+    addChild(map, 0, TAG_MAP);
+
+    TMXObjectGroup* group = map->getObjectGroup("groundLayer"); //第一步，获取对象层
+    auto& objects = group->getObjects();
+    
+    Value objectsVal = Value(objects);
+    CCLOG("%s", objectsVal.getDescription().c_str());
+    
+    Point points[] = {
+        Point(0,0),
+        Point(237,0),
+        Point(270,-32),
+        Point(765,-32),
+        
+    };
+    PhysicsBody* body = PhysicsBody::createEdgePolygon(points, 4);
+    
+    map->setPhysicsBody(body);
+}
+
+void TiledTest::testTgaMap()
+{
+    auto map = TileMapAtlas::create("tiled/tiles.png", "tiled/levelmap.tga", 16, 16);
+    map->getTexture()->setAntiAliasTexParameters();
+    map->setAnchorPoint( Point(0, 0) );
+
+//    sImageTGA* info = map->getTGAInfo();
+    
+    addChild(map, 0, TAG_MAP);
+    
+}
+
 void TiledTest::testTiled()
 {
     setInfo("testTiled");
@@ -88,6 +128,7 @@ void TiledTest::testTiled()
     auto map = TMXTiledMap::create("tiled/testMap.tmx");
 //    auto map = TMXTiledMap::create("tiled/map1.tmx");
     addChild(map, 0, TAG_MAP);
+    
 }
 
 void TiledTest::testMoveGird()

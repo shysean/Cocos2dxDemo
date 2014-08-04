@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="48" height="15" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="Image29" tilewidth="16" tileheight="16">
+  <image source="Image29.png" trans="ffffff" width="480" height="240"/>
+ </tileset>
+ <tileset firstgid="451" name="Image36" tilewidth="16" tileheight="16">
+  <image source="Image36.png" width="32" height="80"/>
+ </tileset>
+ <tileset firstgid="461" name="Image50" tilewidth="16" tileheight="16">
+  <image source="Image50.png" width="64" height="80"/>
+ </tileset>
+ <layer name="块层 1" width="48" height="15">
+  <data encoding="base64" compression="zlib">
+   eJyt1FODkAkAQNGZbNucbNuuqcm2bdu2jcm27dbMWIS1N9ee/Q/fw3m+bzc0JCQkClGJRnRiEJNYxCYOcYlHfBKQkEQkJglJSUZyUpCSVKQmDWlJR3oyEBpQNyOZyEwWspKN7ISRg5zkIjd5yEs+8lOAghSiMEUoSjGKU4KSlKI0ZSgbYLcc5alARSpRmSpUpRrVqUFNalGbOtSlHuHUpwERNKQRjWlCU5rRnBa0DLDbita0oS3taE8HOtKJznShK93oTg960ove9KEv/ejPAAYyiMEMYSjDGB5gdwQjGcVoxjCWcYxnAhOZxGSmMJVpTGcGM5nFbOYwl3nMZwELWcRilrA0wO4ylrOClaxiNWtYyzrWs4GNbCKSzWxhK9vYzg52sovd7GEv+9jPAQ5yKMDuYY5wlGMc5wQnOcVpznCWc5znAhe5xGWucJVrXOcGH/AhH/Exn/Apn/F5gN0v+JKv+Jqb3OI2d7jLPe7zgIc84hu+5Tu+5zFPeMozfuBHfuJnfuFXfuP3ALt/8Cd/8Tf/8C/PecFLXvGaN7zlHe/5f+KhRCEq0YhODGISi9jEIS7xiE+C0OC6CUlEYpKQlGQkJwUpSUVq0pCWdKQnAxnJRGaykJVsZCeMHOQkF7nJQ94Au/nITwEKUojCFKEoxShOCUpSitKUoSzlKE8FKlKJylShKtWoTg1qUovaAXbrUJd6hFOfBkTQkEY0pglNaUZzWtCSVrSmDW1pR3s60JFOdKYLXelG9wC7PehJL3rTh770oz8DGMggBjOEoQxjOCMYyShGM4axjGM8E5jIJCYzhakBdqcxnRnMZBazmcNc5jGfBSxkEYtZwlKWsZwVrGQVq1nDWtaxng1sZBORAXY3s4WtbGM7O9jJLnazh73sYz8HOMghDnOEoxzjOCc4ySlOc4aznOM8FwLs/gdgEkMm
+  </data>
+ </layer>
+ <layer name="块层 2" width="48" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMArIAxcZGRguAfFlIL7CSF/+UAeUhMMoGAWjYGABANgEJgI=
+  </data>
+ </layer>
+ <layer name="块层 3" width="48" height="15">
+  <data encoding="base64" compression="zlib">
+   eJztzkERAAAEADD659JLBj7O3ZZgEQAwV3k92Pt8B+41Nj8BjQ==
+  </data>
+ </layer>
+ <objectgroup name="groundLayer" width="48" height="15">
+  <object name="ground" type="1" x="2" y="161">
+   <properties>
+    <property name="name" value="ground"/>
+   </properties>
+   <polyline points="0,0 237,0 270,-32 765,-32"/>
+  </object>
+ </objectgroup>
+</map>

@@ -33,6 +33,10 @@
 		14373E5F1934687500995FE9 /* HeroAni in Resources */ = {isa = PBXBuildFile; fileRef = 14373E5D1934687500995FE9 /* HeroAni */; };
 		14373E681935CD0E00995FE9 /* DataStructure.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14373E661935CD0E00995FE9 /* DataStructure.cpp */; };
 		14373E691935CD0E00995FE9 /* DataStructure.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14373E661935CD0E00995FE9 /* DataStructure.cpp */; };
+		1440638D198DEAE50017CD43 /* frameAni in Resources */ = {isa = PBXBuildFile; fileRef = 1440638C198DEAE50017CD43 /* frameAni */; };
+		1440638E198DEAE50017CD43 /* frameAni in Resources */ = {isa = PBXBuildFile; fileRef = 1440638C198DEAE50017CD43 /* frameAni */; };
+		14406394198DEB750017CD43 /* FrameAniTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14406392198DEB750017CD43 /* FrameAniTest.cpp */; };
+		14406395198DEB750017CD43 /* FrameAniTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14406392198DEB750017CD43 /* FrameAniTest.cpp */; };
 		144381CB1920DD7900F394E1 /* TimeUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 144381C91920DD7900F394E1 /* TimeUtil.cpp */; };
 		144381CC1920DD7900F394E1 /* TimeUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 144381C91920DD7900F394E1 /* TimeUtil.cpp */; };
 		144381D31922691800F394E1 /* ResourceTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 144381D11922691800F394E1 /* ResourceTest.cpp */; };
@@ -305,6 +309,9 @@
 		14373E5D1934687500995FE9 /* HeroAni */ = {isa = PBXFileReference; lastKnownFileType = folder; path = HeroAni; sourceTree = "<group>"; };
 		14373E661935CD0E00995FE9 /* DataStructure.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DataStructure.cpp; sourceTree = "<group>"; };
 		14373E671935CD0E00995FE9 /* DataStructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStructure.h; sourceTree = "<group>"; };
+		1440638C198DEAE50017CD43 /* frameAni */ = {isa = PBXFileReference; lastKnownFileType = folder; path = frameAni; sourceTree = "<group>"; };
+		14406392198DEB750017CD43 /* FrameAniTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FrameAniTest.cpp; sourceTree = "<group>"; };
+		14406393198DEB750017CD43 /* FrameAniTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameAniTest.h; sourceTree = "<group>"; };
 		144381C91920DD7900F394E1 /* TimeUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TimeUtil.cpp; sourceTree = "<group>"; };
 		144381CA1920DD7900F394E1 /* TimeUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeUtil.h; sourceTree = "<group>"; };
 		144381D11922691800F394E1 /* ResourceTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ResourceTest.cpp; sourceTree = "<group>"; };
@@ -530,6 +537,15 @@
 			name = DataStructure;
 			sourceTree = "<group>";
 		};
+		14406391198DEB490017CD43 /* FrameAniTest */ = {
+			isa = PBXGroup;
+			children = (
+				14406392198DEB750017CD43 /* FrameAniTest.cpp */,
+				14406393198DEB750017CD43 /* FrameAniTest.h */,
+			);
+			name = FrameAniTest;
+			sourceTree = "<group>";
+		};
 		144381C61920D92300F394E1 /* GUITest */ = {
 			isa = PBXGroup;
 			children = (
@@ -680,6 +696,7 @@
 		14F8725E190FE67A0001C020 /* TestCase */ = {
 			isa = PBXGroup;
 			children = (
+				14406391198DEB490017CD43 /* FrameAniTest */,
 				144F7F5F19665759000365CA /* JniTest */,
 				1400947B196011E000FCD4F3 /* AStarTest */,
 				14A70B90195E8F640034F020 /* ScrollBackgroundTest */,
@@ -812,6 +829,7 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1440638C198DEAE50017CD43 /* frameAni */,
 				14373E5D1934687500995FE9 /* HeroAni */,
 				14A8D76F192DD20A004867B0 /* tiled */,
 				14F7EB5C1923CA2800BAE980 /* png.bin */,
@@ -1009,6 +1027,7 @@
 				1AFAF8BD16D35E4900DB1158 /* CloseSelected.png in Resources */,
 				50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */,
 				5087E78017EB970100C73F5D /* Icon-114.png in Resources */,
+				1440638D198DEAE50017CD43 /* frameAni in Resources */,
 				14F7EB5E1923CA2800BAE980 /* png.bin in Resources */,
 				1AFAF8BE16D35E4900DB1158 /* HelloWorld.png in Resources */,
 				50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */,
@@ -1031,6 +1050,7 @@
 				1419E49A191E484C0066BC28 /* image in Resources */,
 				5087E75317EB910900C73F5D /* CloseNormal.png in Resources */,
 				14F7EB5B1923AD0300BAE980 /* texturePacker in Resources */,
+				1440638E198DEAE50017CD43 /* frameAni in Resources */,
 				14A8D771192DD20A004867B0 /* tiled in Resources */,
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
 				5087E75417EB910900C73F5D /* CloseSelected.png in Resources */,
@@ -1066,6 +1086,7 @@
 				14373E5B1934672700995FE9 /* AniTest.cpp in Sources */,
 				14A70B86195E60840034F020 /* CppTest.cpp in Sources */,
 				14772C8F1916A3D000A3F416 /* GameText.cpp in Sources */,
+				14406394198DEB750017CD43 /* FrameAniTest.cpp in Sources */,
 				14AACF98191A5057001DE502 /* TestCaseScene.cpp in Sources */,
 				14329A5E1927874300966188 /* XdeltaTest.cpp in Sources */,
 				14AACFA4191A50A6001DE502 /* TextTest.cpp in Sources */,
@@ -1113,6 +1134,7 @@
 				14AACFA6191A565D001DE502 /* TestCaseScene.cpp in Sources */,
 				140094851960157D00FCD4F3 /* GLDrawer.cpp in Sources */,
 				14AACFA5191A50A6001DE502 /* TextTest.cpp in Sources */,
+				14406395198DEB750017CD43 /* FrameAniTest.cpp in Sources */,
 				14F8726B190FE67A0001C020 /* BaseTestScene.cpp in Sources */,
 				14770B2C195AF73400127D60 /* MemoryTest.cpp in Sources */,
 				14AEA95F191E296B00EE332E /* GUITest.cpp in Sources */,
