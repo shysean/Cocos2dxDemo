@@ -25,6 +25,8 @@ public:
     void testMethodParam1();
     void testAlgorithm1();
     void testAlgorithm2();
+    void testAlgorithm3();
+    void testByte();
     
     
     
