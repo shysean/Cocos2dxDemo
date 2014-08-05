@@ -21,10 +21,38 @@ public:
 
     void testDestructor();
     void testDoubleDimensionalArray();
-
+    void testBoolValue();
+    void testMethodParam1();
+    void testAlgorithm1();
+    void testAlgorithm2();
+    
+    
+    
+    
+    int returnParam(int param){ return param; };
 };
 
-
+class A
+{
+public:
+    A(){CCLOG("1");}
+    ~A(){CCLOG("2");}
+    void print(){CCLOG("3");}
+};
+class B : public A
+{
+public:
+    B(){CCLOG("4");}
+    virtual ~B(){CCLOG("5");}
+    virtual void print(){CCLOG("6");}
+};
+class C : public B
+{
+public:
+    C(){CCLOG("7");}
+    virtual ~C(){CCLOG("8");}
+    virtual void print(){CCLOG("9");}
+};
 
 class CppTestBase
 {
