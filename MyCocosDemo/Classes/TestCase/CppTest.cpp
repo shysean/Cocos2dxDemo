@@ -57,10 +57,10 @@ void CppTest::testAlgorithm3()
 
     ushort shortColor;
     shortColor |= r >> 19;
-    shortColor = shortColor << 6;
+    shortColor <<= 6;
     
     shortColor |= g >> 10;
-    shortColor = shortColor << 5;
+    shortColor <<= 5;
 
     shortColor |= b >> 3;
     
