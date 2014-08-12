@@ -11,6 +11,8 @@
 
 #include "BaseTestScene.h"
 
+class CGameSocket;
+
 class SocketTest : public BaseTestScene
 {
 public:
@@ -20,10 +22,14 @@ public:
     virtual void initTestMenu();
 
     
-    void testFunction();
-    void testFunction1();
-    void testFunction2();
+    void testCreatSocket();
+    void testSend();
+    void testSimpleSend();
     void testFunction3();
+    
+    
+protected:
+    CGameSocket* m_socket;
 };
 
 

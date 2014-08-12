@@ -69,6 +69,8 @@
 		14AEA95F191E296B00EE332E /* GUITest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14AEA95C191E296B00EE332E /* GUITest.cpp */; };
 		14BA2A251927CC9A008AD0D8 /* xdelta3.c in Sources */ = {isa = PBXBuildFile; fileRef = 14BA2A191927CC9A008AD0D8 /* xdelta3.c */; };
 		14BA2A261927CC9A008AD0D8 /* xdelta3.c in Sources */ = {isa = PBXBuildFile; fileRef = 14BA2A191927CC9A008AD0D8 /* xdelta3.c */; };
+		14D48620199A1F0A005580FE /* GameSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D4861E199A1F0A005580FE /* GameSocket.cpp */; };
+		14D48621199A1F0A005580FE /* GameSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D4861E199A1F0A005580FE /* GameSocket.cpp */; };
 		14F7EB5A1923AD0300BAE980 /* texturePacker in Resources */ = {isa = PBXBuildFile; fileRef = 14F7EB591923AD0300BAE980 /* texturePacker */; };
 		14F7EB5B1923AD0300BAE980 /* texturePacker in Resources */ = {isa = PBXBuildFile; fileRef = 14F7EB591923AD0300BAE980 /* texturePacker */; };
 		14F7EB5E1923CA2800BAE980 /* png.bin in Resources */ = {isa = PBXBuildFile; fileRef = 14F7EB5C1923CA2800BAE980 /* png.bin */; };
@@ -356,6 +358,8 @@
 		14BA2A221927CC9A008AD0D8 /* xdelta3-hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "xdelta3-hash.h"; path = "xdelta/xdelta3-hash.h"; sourceTree = "<group>"; };
 		14BA2A231927CC9A008AD0D8 /* xdelta3-list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "xdelta3-list.h"; path = "xdelta/xdelta3-list.h"; sourceTree = "<group>"; };
 		14BA2A241927CC9A008AD0D8 /* xdelta3-merge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "xdelta3-merge.h"; path = "xdelta/xdelta3-merge.h"; sourceTree = "<group>"; };
+		14D4861E199A1F0A005580FE /* GameSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameSocket.cpp; sourceTree = "<group>"; };
+		14D4861F199A1F0A005580FE /* GameSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSocket.h; sourceTree = "<group>"; };
 		14F7EB591923AD0300BAE980 /* texturePacker */ = {isa = PBXFileReference; lastKnownFileType = folder; path = texturePacker; sourceTree = "<group>"; };
 		14F7EB5C1923CA2800BAE980 /* png.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = png.bin; sourceTree = "<group>"; };
 		14F7EB5D1923CA2800BAE980 /* png.idx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = png.idx; sourceTree = "<group>"; };
@@ -598,6 +602,8 @@
 				14F7EB6C1924822800BAE980 /* FileUtil.h */,
 				140094821960157D00FCD4F3 /* GLDrawer.cpp */,
 				140094831960157D00FCD4F3 /* GLDrawer.h */,
+				14D4861E199A1F0A005580FE /* GameSocket.cpp */,
+				14D4861F199A1F0A005580FE /* GameSocket.h */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -1073,6 +1079,7 @@
 			files = (
 				14770B2B195AF73400127D60 /* MemoryTest.cpp in Sources */,
 				140094841960157D00FCD4F3 /* GLDrawer.cpp in Sources */,
+				14D48620199A1F0A005580FE /* GameSocket.cpp in Sources */,
 				14F87266190FE67A0001C020 /* AppDelegate.cpp in Sources */,
 				1419E4A7191F8FDC0066BC28 /* ParticleTest.cpp in Sources */,
 				14F7EB6D1924822800BAE980 /* FileUtil.cpp in Sources */,
@@ -1109,6 +1116,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14D48621199A1F0A005580FE /* GameSocket.cpp in Sources */,
 				14BA2A261927CC9A008AD0D8 /* xdelta3.c in Sources */,
 				14F87267190FE67A0001C020 /* AppDelegate.cpp in Sources */,
 				14329A5F1927874300966188 /* XdeltaTest.cpp in Sources */,
