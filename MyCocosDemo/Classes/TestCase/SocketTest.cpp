@@ -22,19 +22,21 @@ void SocketTest::runThisTest()
     Director::getInstance()->replaceScene(this);
     
     m_socket = new CGameSocket();
-    
-    while (true)
+
+}
+
+void SocketTest::update(float d)
+{
+
+    char buffer[_MAX_MSGSIZE] = { 0 };
+    int nSize = sizeof(buffer);
+    char* pbufMsg = buffer;
+    if(m_socket == NULL)
     {
-        char buffer[_MAX_MSGSIZE] = { 0 };
-        int nSize = sizeof(buffer);
-        char* pbufMsg = buffer;
-        if(m_socket == NULL)
-        {
-            break;
-        }
-        if (!m_socket->ReceiveMsg(pbufMsg, nSize)) {
-            break;
-        }
+        return;
+    }
+    if (m_socket->ReceiveMsg(pbufMsg, nSize)) {
+        CCLOG("%s,%d", pbufMsg, nSize);
     }
 }
 
@@ -44,7 +46,7 @@ void SocketTest::initTestMenu()
     ADD_TEST_METHOD(testCreatSocket);
     ADD_TEST_METHOD(testSend);
     ADD_TEST_METHOD(testSimpleSend);
-    ADD_TEST_METHOD(testFunction3);
+    ADD_TEST_METHOD(startRecv);
 }
 
 
@@ -72,7 +74,7 @@ void SocketTest::testSend()
     
     
     // \n 用于Ruby的Server脚本读取行
-    char data[10] = "HELLO!\n";
+    char data[24] = "HELLO Socket!\n";
     int dataLen = sizeof(data);
     
 	char *str = (char *) malloc(dataLen + 1);
@@ -108,23 +110,23 @@ void SocketTest::testSimpleSend()
           (char *)&serv_addr.sin_addr.s_addr,
           server->h_length);
     serv_addr.sin_port = htons(portno);
+    
     connect(sockfd,(struct sockaddr *) &serv_addr,sizeof(serv_addr));
     
-    log("SocketTest::testFunction");
-
+    // Send
     char data[15] = "HELLO Socket\n";
     int dataLen = sizeof(data);
-    
 	char *str = (char *) malloc(dataLen + 1);
 	memcpy(str, data, dataLen);
 	str[dataLen] = '\0';
+    
     send(sockfd, ((void*)str), dataLen, 0);
 }
 
 
-void SocketTest::testFunction3()
+void SocketTest::startRecv()
 {
-    log("SocketTest::testFunction");
+    scheduleUpdate();
 }
 
 

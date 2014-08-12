@@ -7,7 +7,7 @@
 //
 
 #include "GameSocket.h"
-
+#include <iostream>
 
 CGameSocket::CGameSocket()
 {
@@ -178,13 +178,22 @@ bool CGameSocket::ReceiveMsg(void* pBuf, int& nSize)
 		}
 	}
     
+    // Modify by sean
+    memcpy(pBuf, m_bufInput, m_nInbufLen);
+    nSize = m_nInbufLen;
+    m_nInbufLen = 0;
+    bzero(m_bufOutput, OUTBUFSIZE);
+    return true;
+    // end
+
+    
     // 计算要拷贝的消息的大小（一个消息，大小为整个消息的第一个16字节），因为环形缓冲区，所以要分开计算
 	int packsize = (unsigned char)m_bufInput[m_nInbufStart] +
     (unsigned char)m_bufInput[(m_nInbufStart + 1) % INBUFSIZE] * 256; // 注意字节序，高位+低位
     
 	// 检测消息包尺寸错误 暂定最大16k
 	if (packsize <= 0 || packsize > _MAX_MSGSIZE) {
-		m_nInbufLen = 0;		// 直接清空INBUF
+        m_nInbufLen = 0;		// 直接清空INBUF
 		m_nInbufStart = 0;
 		return false;
 	}

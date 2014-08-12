@@ -25,8 +25,9 @@ public:
     void testCreatSocket();
     void testSend();
     void testSimpleSend();
-    void testFunction3();
+    void startRecv();
     
+    virtual void update(float d) override;
     
 protected:
     CGameSocket* m_socket;
