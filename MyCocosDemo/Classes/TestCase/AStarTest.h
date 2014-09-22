@@ -42,7 +42,8 @@ public:
     
     CREATE_FUNC(GridLayer);
     
-    virtual void draw(Renderer *renderer, const kmMat4& transform, bool transformUpdated) override;
+    virtual void draw(Renderer *renderer, const Mat4& transform, uint32_t flags);
+    
     void drawGrid(int row, int col, Color4B color);
 
     void testAstar();

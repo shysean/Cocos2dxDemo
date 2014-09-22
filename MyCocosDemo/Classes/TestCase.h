@@ -26,6 +26,7 @@
 #include "TestCase/JniTest.h"
 #include "TestCase/FrameAniTest.h"
 #include "TestCase/ActionTest.h"
+#include "TestCase/SHA1Test.h"
 
 
 

@@ -29,6 +29,7 @@ Controller g_aTestNames[] = {
     CREATE_TEST_SCENE("JniTest", JniTest)
     CREATE_TEST_SCENE("FrameAniTest", FrameAniTest)
     CREATE_TEST_SCENE("ActionTest", ActionTest)
+    CREATE_TEST_SCENE("SHA1Test", SHA1Test)
 };
 
 static int g_testCount = sizeof(g_aTestNames) / sizeof(g_aTestNames[0]);
@@ -136,7 +137,6 @@ void TestCaseScene::menuCallback(Ref * sender)
     
     // create the test scene and run it
     auto scene = g_aTestNames[idx].callback();
-    
     if (scene)
     {
         scene->runThisTest();

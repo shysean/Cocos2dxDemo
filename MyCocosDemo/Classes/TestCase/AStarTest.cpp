@@ -207,7 +207,8 @@ void GridLayer::onTouchEnded(Touch* touch, Event* event)
     infoMap();
     
 }
-void GridLayer::draw(cocos2d::Renderer *renderer, const kmMat4 &transform, bool transformUpdated)
+
+void GridLayer::draw(Renderer *renderer, const Mat4& transform, uint32_t flags)
 {
     if (m_data == nullptr) {
         return;
